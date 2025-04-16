@@ -1,0 +1,50 @@
+$colors: (
+    common: (
+        white: #ffffff,
+        black: #000,
+        black2: #111827,
+        star: #fdb022,
+    ),
+    heading: (
+        primary: #002366,
+    ),
+    grey: (
+        1:#70747D,
+        2:#414652,
+
+    ),
+    text: (
+        body:#70747D,
+        1:#70747D,
+        top-header: #f5ba68,
+        top-header-hover: #f04a00,
+        menu: #ffffff,
+        menu-hover:#f04a00,
+        link: #f04a00,
+        link-hover: #002366,
+        button: #ffffff,
+        btn-hover: #f04a00,
+        price: #a0a3a9,
+        sale-price: #F04A00,
+        topmenu: #F2F4F7,
+        topmenu-hover: #70747d,
+        stock: #5fa745,
+        onsale: #70747d,
+        rating: #f04a00,
+    ),
+    theme: (
+        1: #F04A00, 
+        2: #002366,
+        primary: #f04a00,
+        secondery: #002366,
+        top-header: #111827,
+        button: #f04a00,
+        btn-hover: #ffffff,
+        onsale: #ffffff,
+    ),
+    border: (
+        1: #000,
+        button:#F04A00,
+        btn-hover:#F04A00,
+    )
+);
