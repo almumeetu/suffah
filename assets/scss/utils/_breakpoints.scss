@@ -6,21 +6,3 @@ $lg : 'only screen and (min-width: 992px) and (max-width: 1199px)';
 $md:'only screen and (min-width: 768px) and (max-width: 991px)';
 $sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
 $xs:'(max-width: 575px)';
-$xxs: '(max-width: 400px)';
-
-// responsive variable for tab & mobile
-$tab:'(max-width: 991px)';
-$laptop:'(max-width: 1450px)';
-
-// responsive variable for wordpress admin bar
-$wp-sm: '@media (max-width: 782px)';
-$wp-xs: '@media (max-width: 600px)';
-
-//Custom Breakpoient for my orders
-
-$mxxl: '(max-width: 1530px)';
-$xssm: 'only screen and (min-width: 418px) and (max-width: 575px)';
-$xxssm: 'only screen and (max-width: 417px)';
-
-$b620: 'only screen and (max-width: 620px)';
-$b518: 'only screen and (max-width: 518px)';
