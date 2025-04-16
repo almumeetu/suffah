@@ -1,0 +1,174 @@
+@import '../utils';
+
+/*-----------------------------------------------------------------------------------
+
+    Theme Name: suffah – HTML5 Template
+    Author: SOFTZINO
+    Support: info@softzino.com
+    Description: Template Name  – HTML5 Template
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+/************ TABLE OF CONTENTS ***************
+
+    01. THEME DEFAULT CSS
+    02. HEADER CSS
+
+
+
+**********************************************/
+
+
+
+
+/*----------------------------------------*/
+/*  01. THEME DEFAULT CSS START
+/*----------------------------------------*/
+
+@import url($font-url);
+@import url($font-url2);
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*---------------------------------
+    typography css start 
+---------------------------------*/
+body {
+	font-family: var(--st-ff-body);
+	font-size: var(--st-fz-body);
+	font-weight: normal;
+	color: var(--st-text-body);
+	line-height: var(--st-lh-body);
+	overflow-x: hidden;
+}
+
+a{
+	text-decoration: none;
+}
+
+h1,
+h2,      
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--st-ff-heading);
+	color: var(--st-heading-primary);
+	margin-top: 0px;
+	font-weight: var(--st-fw-heading);
+	line-height: 1.2;
+	@include transition(.3s);
+}
+
+h1 {
+	font-size: var(--st-fz-h1);
+	line-height: var(--st-lh-h1);
+	@media #{$md}{
+	font-size: var(--st-fz-tab-h1);
+	line-height: var( --st-lh-h1-tab);
+	}
+	@media #{$sm, $xs}{
+		font-size: var(--st-fz-mob-h1);
+		line-height: var(--st-lh-h1-mob);
+	}
+}
+  
+h2 {
+font-size: var(--st-fz-h2);
+line-height: var((--st-lh-h2));
+@media #{$lg,$xl}{
+	font-size: 65px;
+	line-height: 70px;
+ }
+ @media #{$lg,$md}{
+	font-size: var(--st-fz-tab-h2);
+	line-height: var( --st-lh-h2-tab);
+ }
+ @media #{$sm, $xs}{
+	font-size: var(--st-fz-mob-h2);
+	line-height: var(--st-lh-h2-mob);
+ }
+}
+
+h3 {
+font-size: var(--st-fz-h3);
+line-height: var(--st-lh-h3);
+@media #{$md}{
+font-size: var(--st-fz-tab-h3);
+line-height: var( --st-lh-h3-tab);
+}
+@media #{$sm, $xs}{
+	font-size: var(--st-fz-mob-h3);
+	line-height: var(--st-lh-h3-mob);
+}
+}
+
+h4 {
+font-size: var(--st-fz-h4);
+line-height: var(--st-lh-h4);
+@media #{$md}{
+font-size: var(--st-fz-tab-h4);
+line-height: var( --st-lh-h4-tab);
+}
+@media #{$sm, $xs}{
+	font-size: var(--st-fz-mob-h4);
+	line-height: var(--st-lh-h4-mob);
+}
+}
+
+h5 {
+font-size: var(--st-fz-h5);
+line-height: var(--st-lh-h5);
+@media #{$md}{
+font-size: var(--st-fz-tab-h5);
+line-height: var( --st-lh-h5-tab);
+}
+@media #{$sm, $xs}{
+	font-size: var(--st-fz-mob-h5);
+	line-height: var(--st-lh-h5-mob);
+}
+}
+
+h6 {
+font-size: var(--st-fz-h6);
+line-height: var(--st-lh-h6);
+@media #{$md}{
+font-size: var(--st-fz-tab-h6);
+line-height: var( --st-lh-h6-tab);
+}
+@media #{$sm, $xs}{
+	font-size: var(--st-fz-mob-h6);
+	line-height: var(--st-lh-h6-mob);
+}
+ 
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	font-family: var(--st-ff-p);
+	font-size: var(--st-fz-body);
+	font-weight: var(--st-fw-normal);
+	color: var(--st-text-body);
+	line-height: 26px;
+	@media #{$md, $sm, $xs}{
+		font-size: var(--st-fz-tab-body);
+	}
+}
+
+
+.p-relative{
+	position: relative;
+}
+.p-absolute{
+	position: absolute;
+}

@@ -1,17 +1,17 @@
 
 // font url
 
-$font-url: 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap';
+$font-url: 'https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap';
+$font-url2: 'https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap';
 
 // font family
 $font-family: (
     ff: (
-        body: "'Poppins', sans-serif",
-        heading: "'Poppins', sans-serif",
-        p: "'Poppins', sans-serif",
-        menu: "'Poppins', sans-serif",
-        button: "'Poppins', sans-serif",
-        fontawesome: '"Font Awesome 6 Pro"',
+        body: "'PT Sans', sans-serif",
+        heading: "'Philosopher', sans-serif",
+        p: "'PT Sans', sans-serif",
+        menu: "'Philosopher', sans-serif",
+        button: "'Philosopher', sans-serif",
     )
 );
 
@@ -19,17 +19,12 @@ $font-family: (
 $font-scale: (
     fw: (
         normal: normal,
-        elight: 200,
-        light: 300,
         regular: 400,
         medium: 500,
         sbold: 600,
         bold: 700,
         ebold: 800,
         black: 900,
-        heading: 600,
-        button: 600,
-        menu: 500,
     )
 );
 
@@ -38,61 +33,49 @@ $font-size: (
     fz: (
         body: 18px,
         p: 18px,
-        h1: 80px,
-        h2: 60px,
-        h3: 48px ,
+        p2: 16px,
+        h1: 60px,
+        h2: 48px,
+        h3: 36px ,
         h4: 32px,
-        h5: 24px,
-        h6: 20px, 
-        button: 18px,
-        menu: 18px,
+        h5: 28px,
+        h6: 24px, 
     )
 );
-$font-size-mob: (
-    fz-mob: (
-        h1: 48px,
-        h2: 38px,
-        h3: 24px ,
-        h4: 22px,
-        h5: 24px,
-        h6: 20px, 
-    )
-);
-$font-size-tab: (
-    fz-tab: (
-        body: 18px,
-        h1: 65px,
-        h2: 50px,
-        h3: 38px ,
-        h4: 42px,
-        h5: 34px,
-        h6: 30px, 
-    )
-);
+// $font-size-mob: (
+//     fz-mob: (
+//         h1: 48px,
+//         h2: 38px,
+//         h3: 24px ,
+//         h4: 22px,
+//         h5: 24px,
+//         h6: 20px, 
+//     )
+// );
+// $font-size-tab: (
+//     fz-tab: (
+//         body: 18px,
+//         h1: 65px,
+//         h2: 50px,
+//         h3: 38px ,
+//         h4: 42px,
+//         h5: 34px,
+//         h6: 30px, 
+//     )
+// );
 
 //Line Height
 
 $line-height: (
     lh: (
-        body: 20px,
-        h1: 90px,
-        h2: 70px,
-        h3: 58px ,
-        h4: 42px,
-        h5: 34px,
-        h6: 30px, 
-        button: 28px,
-        h1-tab: 75px,
-        h2-tab: 60px,
-        h3-tab: 48px ,
-        h4-tab: 52px,
-        h5-tab: 44px,
-        h6-tab: 30px,
-        h1-mob: 58px,
-        h2-mob: 48px,
-        h3-mob: 34px ,
-        h4-mob: 32px,
-        h5-mob: 34px,
-        h6-mob: 30px,
+        body: 28px,
+        p: 28px,
+        p2: 24px,
+        h1: 72px,
+        h2: 60px,
+        h3: 48px,
+        h4: 40px,
+        h5: 36px,
+        h6: 32px, 
     )
 );

@@ -1,4 +1,7 @@
-@forward "./base/index";
-@forward "./components/index";
+
 @use "./utils/index";
 
+@import "components/theme";
+@import "components/buttons";
+@import "components/menu";
+@import "pages/index";

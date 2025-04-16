@@ -1,10 +1,163 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+:root {
+  /**
+  @font family declaration
+  */
+  --st-ff-body: 'PT Sans', sans-serif;
+  --st-ff-heading: 'Philosopher', sans-serif;
+  --st-ff-p: 'PT Sans', sans-serif;
+  --st-ff-menu: 'Philosopher', sans-serif;
+  --st-ff-button: 'Philosopher', sans-serif;
+  /**
+  @color declaration
+  */
+  --st-common-white: #ffffff;
+  --st-common-black: #111111;
+  --st-common-light-white: #EEEEEE;
+  --st-heading-primary: #111111;
+  --st-grey-1: #f3faf5;
+  --st-grey-2: #EEEEEE;
+  --st-text-body: #6A6A6A;
+  --st-theme-primary: rgb(10, 153, 60);
+  --st-theme-secondery: rgb(251, 197, 12);
+  --st-border-1: rgb(238, 238, 238);
+  /**
+  @font weight declaration
+  */
+  --st-fw-normal: normal;
+  --st-fw-regular: 400;
+  --st-fw-medium: 500;
+  --st-fw-sbold: 600;
+  --st-fw-bold: 700;
+  --st-fw-ebold: 800;
+  --st-fw-black: 900;
+  /**
+  @font size declaration
+  */
+  --st-fz-body: 18px;
+  --st-fz-p: 18px;
+  --st-fz-p2: 16px;
+  --st-fz-h1: 60px;
+  --st-fz-h2: 48px;
+  --st-fz-h3: 36px;
+  --st-fz-h4: 32px;
+  --st-fz-h5: 28px;
+  --st-fz-h6: 24px;
+  /**
+  @line height declaration
+  */
+  --st-lh-body: 28px;
+  --st-lh-p: 28px;
+  --st-lh-p2: 24px;
+  --st-lh-h1: 72px;
+  --st-lh-h2: 60px;
+  --st-lh-h3: 48px;
+  --st-lh-h4: 40px;
+  --st-lh-h5: 36px;
+  --st-lh-h6: 32px;
+}
+
+:root {
+  /**
+  @font family declaration
+  */
+  --st-ff-body: 'PT Sans', sans-serif;
+  --st-ff-heading: 'Philosopher', sans-serif;
+  --st-ff-p: 'PT Sans', sans-serif;
+  --st-ff-menu: 'Philosopher', sans-serif;
+  --st-ff-button: 'Philosopher', sans-serif;
+  /**
+  @color declaration
+  */
+  --st-common-white: #ffffff;
+  --st-common-black: #111111;
+  --st-common-light-white: #EEEEEE;
+  --st-heading-primary: #111111;
+  --st-grey-1: #f3faf5;
+  --st-grey-2: #EEEEEE;
+  --st-text-body: #6A6A6A;
+  --st-theme-primary: rgb(10, 153, 60);
+  --st-theme-secondery: rgb(251, 197, 12);
+  --st-border-1: rgb(238, 238, 238);
+  /**
+  @font weight declaration
+  */
+  --st-fw-normal: normal;
+  --st-fw-regular: 400;
+  --st-fw-medium: 500;
+  --st-fw-sbold: 600;
+  --st-fw-bold: 700;
+  --st-fw-ebold: 800;
+  --st-fw-black: 900;
+  /**
+  @font size declaration
+  */
+  --st-fz-body: 18px;
+  --st-fz-p: 18px;
+  --st-fz-p2: 16px;
+  --st-fz-h1: 60px;
+  --st-fz-h2: 48px;
+  --st-fz-h3: 36px;
+  --st-fz-h4: 32px;
+  --st-fz-h5: 28px;
+  --st-fz-h6: 24px;
+  /**
+  @line height declaration
+  */
+  --st-lh-body: 28px;
+  --st-lh-p: 28px;
+  --st-lh-p2: 24px;
+  --st-lh-h1: 72px;
+  --st-lh-h2: 60px;
+  --st-lh-h3: 48px;
+  --st-lh-h4: 40px;
+  --st-lh-h5: 36px;
+  --st-lh-h6: 32px;
+}
+
+/*-----------------------------------------------------------------------------------
+
+    Theme Name: suffah – HTML5 Template
+    Author: SOFTZINO
+    Support: info@softzino.com
+    Description: Template Name  – HTML5 Template
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+/************ TABLE OF CONTENTS ***************
+
+    01. THEME DEFAULT CSS
+    02. HEADER CSS
+
+
+
+**********************************************/
+/*----------------------------------------*/
+/*  01. THEME DEFAULT CSS START
+/*----------------------------------------*/
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  box-sizing: border-box;
+}
+
+/*---------------------------------
+    typography css start 
+---------------------------------*/
+body {
+  font-family: var(--st-ff-body);
+  font-size: var(--st-fz-body);
+  font-weight: normal;
+  color: var(--st-text-body);
+  line-height: var(--st-lh-body);
+  overflow-x: hidden;
+}
+
+a {
   text-decoration: none;
-  outline: none;
 }
 
 h1,
@@ -13,34 +166,148 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  font-family: var(--st-ff-heading);
+  color: var(--st-heading-primary);
+  margin-top: 0px;
+  font-weight: var(--st-fw-heading);
+  line-height: 1.2;
+  transition: all 0.3s ease-out 0s;
 }
 
-header h1 {
-  background-color: red;
-  padding: 1rem;
-  text-align: center;
+h1 {
+  font-size: var(--st-fz-h1);
+  line-height: var(--st-lh-h1);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: var(--st-fz-tab-h1);
+    line-height: var(--st-lh-h1-tab);
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  h1 {
+    font-size: var(--st-fz-mob-h1);
+    line-height: var(--st-lh-h1-mob);
+  }
 }
 
-main p {
-  background: orange;
-  color: #fff;
-  font-size: 18px;
+h2 {
+  font-size: var(--st-fz-h2);
+  line-height: var(--st-lh-h2);
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px) {
+  h2 {
+    font-size: 65px;
+    line-height: 70px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  h2 {
+    font-size: var(--st-fz-tab-h2);
+    line-height: var(--st-lh-h2-tab);
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  h2 {
+    font-size: var(--st-fz-mob-h2);
+    line-height: var(--st-lh-h2-mob);
+  }
 }
 
-.btn, .button-learn, .button-read {
-  border: 1px solid #000;
-  padding: 15px 30px;
-  text-align: center;
-  font-size: 20px;
-  cursor: pointer;
-  font-size: 24px;
+h3 {
+  font-size: var(--st-fz-h3);
+  line-height: var(--st-lh-h3);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  h3 {
+    font-size: var(--st-fz-tab-h3);
+    line-height: var(--st-lh-h3-tab);
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  h3 {
+    font-size: var(--st-fz-mob-h3);
+    line-height: var(--st-lh-h3-mob);
+  }
 }
 
-.button-read {
-  color: #fff;
+h4 {
+  font-size: var(--st-fz-h4);
+  line-height: var(--st-lh-h4);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  h4 {
+    font-size: var(--st-fz-tab-h4);
+    line-height: var(--st-lh-h4-tab);
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  h4 {
+    font-size: var(--st-fz-mob-h4);
+    line-height: var(--st-lh-h4-mob);
+  }
 }
 
-.button-learn {
-  background: 0;
+h5 {
+  font-size: var(--st-fz-h5);
+  line-height: var(--st-lh-h5);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  h5 {
+    font-size: var(--st-fz-tab-h5);
+    line-height: var(--st-lh-h5-tab);
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  h5 {
+    font-size: var(--st-fz-mob-h5);
+    line-height: var(--st-lh-h5-mob);
+  }
+}
+
+h6 {
+  font-size: var(--st-fz-h6);
+  line-height: var(--st-lh-h6);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  h6 {
+    font-size: var(--st-fz-tab-h6);
+    line-height: var(--st-lh-h6-tab);
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  h6 {
+    font-size: var(--st-fz-mob-h6);
+    line-height: var(--st-lh-h6-mob);
+  }
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  font-family: var(--st-ff-p);
+  font-size: var(--st-fz-body);
+  font-weight: var(--st-fw-normal);
+  color: var(--st-text-body);
+  line-height: 26px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  p {
+    font-size: var(--st-fz-tab-body);
+  }
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+p {
+  color: var(--st-theme-primary);
 }/*# sourceMappingURL=main.css.map */
