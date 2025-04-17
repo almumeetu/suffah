@@ -28,38 +28,39 @@
             color: var(--st-heading-primary);
             font-weight: var(--st-fw-regular);
         }
+    }
+}
 
-        .social-icon-wrapper {
-            display: inline;
+//Social Icon
+.social-icon-wrapper {
+    display: inline;
 
-            a {
-                position: relative;
+    a {
+        position: relative;
 
-                &::after {
-                    position: absolute;
-                    content: "";
-                    width: 2px;
-                    height: 16px;
-                    background: var(--st-common-light-white);
-                    top: 4px;
-                }
+        &::after {
+            position: absolute;
+            content: "";
+            width: 2px;
+            height: 16px;
+            background: var(--st-common-light-white);
+            top: 4px;
+        }
 
-                &:last-child {
-                    &::after {
-                        width: 0;
-                        height: 0;
-                    }
-                }
+        &:last-child {
+            &::after {
+                width: 0;
+                height: 0;
+            }
+        }
 
-                i {
-                    padding: 0 13px;
-                    color: var(--st-heading-primary);
-                    @include transition(0.3s);
+        i {
+            padding: 0 13px;
+            color: var(--st-heading-primary);
+            @include transition(0.3s);
 
-                    &:hover {
-                        color: var(--st-theme-primary);
-                    }
-                }
+            &:hover {
+                color: var(--st-theme-primary);
             }
         }
     }

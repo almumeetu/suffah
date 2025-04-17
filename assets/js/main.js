@@ -1,3 +1,6 @@
+
+// Search Overlay Functionality
+
 function initializeSearchOverlay() {
     const searchIcon = document.querySelector(".search-icon");
     const searchOverlay = document.querySelector(".search-overlay");
@@ -26,5 +29,35 @@ function initializeSearchOverlay() {
   // Init after DOM loaded
   document.addEventListener("DOMContentLoaded", function () {
     initializeSearchOverlay();
+  });
+  
+
+
+  // Off-canvas Menu Overlay Functionality
+  function initializeOffcanvasMenu() {
+    const openBtn = document.querySelector(".header-offcanvas-menu a");
+    const offcanvas = document.querySelector(".offcanvas-menu");
+    const overlay = document.querySelector(".offcanvas-overlay");
+    const closeBtn = document.querySelector(".close-offcanvas");
+  
+    openBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      offcanvas.classList.add("open");
+      overlay.classList.add("active");
+    });
+  
+    closeBtn.addEventListener("click", function () {
+      offcanvas.classList.remove("open");
+      overlay.classList.remove("active");
+    });
+  
+    overlay.addEventListener("click", function () {
+      offcanvas.classList.remove("open");
+      overlay.classList.remove("active");
+    });
+  }
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    initializeOffcanvasMenu();
   });
   
