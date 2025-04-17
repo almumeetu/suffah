@@ -2,13 +2,13 @@ $colors: (
     common: (
         white: #ffffff,
         black: #111111,
-        light-white: #EEEEEE,
+        light-white: rgba(238, 238, 238, 1),
     ),
     heading: (
         primary: #111111,
     ),
     grey: (
-        1:#f3faf5,
+        1:#F3FAF5,
         2:#EEEEEE,
     ),
     text: (
@@ -20,5 +20,8 @@ $colors: (
     ),
     border: (
         1: rgba(238, 238, 238, 1),
+    ),
+    bg: (
+        1: #F3FAF5,
     )
 );
