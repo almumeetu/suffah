@@ -567,11 +567,11 @@ p {
   background: rgba(0, 0, 0, 0.6);
   opacity: 0;
   visibility: hidden;
-  transition: 0.3s;
+  transition: all 0.3s ease-out 0s;
   z-index: 9998;
 }
 
-/* Menu */
+/* Off Canvas Menu */
 .offcanvas-menu {
   position: fixed;
   top: 0;
@@ -580,8 +580,8 @@ p {
   height: 100%;
   background: #fff;
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.2);
-  padding: 30px 20px;
-  transition: 0.4s ease;
+  padding: 60px;
+  transition: all 0.4s ease-out 0s;
   z-index: 9999;
 }
 
@@ -604,21 +604,25 @@ p {
   cursor: pointer;
 }
 
-.offcanvas-nav ul {
-  list-style: none;
-  padding: 60px 0 0;
-  margin: 0;
+.offcanvas-wrapper {
+  padding-bottom: 60px;
+  border-bottom: 1px solid var(--st-border-1);
 }
-
-.offcanvas-nav li {
+.offcanvas-wrapper .offcanvas-logo {
   margin-bottom: 20px;
 }
+.offcanvas-wrapper .social-icon-wrapper {
+  margin-left: -15px;
+}
 
-.offcanvas-nav a {
-  text-decoration: none;
-  font-size: 18px;
-  color: #333;
-  font-weight: 500;
+.offcanvas-menu-list {
+  padding-top: 60px;
+}
+.offcanvas-menu-list .offcanvas-menu-wrapper nav ul {
+  flex-direction: column;
+}
+.offcanvas-menu-list .offcanvas-menu-wrapper nav ul li {
+  margin-bottom: 20px;
 }
 
 .header-top-area {
