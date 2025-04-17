@@ -1,0 +1,37 @@
+// Primary Button 
+
+.primary-btn {
+    display: inline-block;
+    padding: 20px 44px;
+    color: var(--st-common-white);
+    background: var(--st-theme-primary);
+    border: 1px solid var(--st-theme-primary);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    line-height: 24px;
+    font-family: var(--st-ff-menu);
+    font-weight: var(--st-fw-bold);
+    cursor: pointer;
+    @include transition(0.4s);
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background: var(--st-common-white);
+        z-index: -1;
+        @include transition(0.4s);
+    }
+
+    &:hover {
+        color: var(--st-theme-primary);
+
+        &::before {
+            width: 100%;
+        }
+    }
+}

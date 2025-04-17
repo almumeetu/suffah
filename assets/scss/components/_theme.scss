@@ -30,7 +30,7 @@
 @import url($font-url2);
 
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -48,12 +48,13 @@ body {
 	overflow-x: hidden;
 }
 
-a{
+a {
 	text-decoration: none;
+	color: var(--st-heading-primary);
 }
 
 h1,
-h2,      
+h2,
 h3,
 h4,
 h5,
@@ -69,84 +70,97 @@ h6 {
 h1 {
 	font-size: var(--st-fz-h1);
 	line-height: var(--st-lh-h1);
-	@media #{$md}{
-	font-size: var(--st-fz-tab-h1);
-	line-height: var( --st-lh-h1-tab);
+
+	@media #{$md} {
+		font-size: var(--st-fz-tab-h1);
+		line-height: var(--st-lh-h1-tab);
 	}
-	@media #{$sm, $xs}{
+
+	@media #{$sm, $xs} {
 		font-size: var(--st-fz-mob-h1);
 		line-height: var(--st-lh-h1-mob);
 	}
 }
-  
+
 h2 {
-font-size: var(--st-fz-h2);
-line-height: var((--st-lh-h2));
-@media #{$lg,$xl}{
-	font-size: 65px;
-	line-height: 70px;
- }
- @media #{$lg,$md}{
-	font-size: var(--st-fz-tab-h2);
-	line-height: var( --st-lh-h2-tab);
- }
- @media #{$sm, $xs}{
-	font-size: var(--st-fz-mob-h2);
-	line-height: var(--st-lh-h2-mob);
- }
+	font-size: var(--st-fz-h2);
+	line-height: var((--st-lh-h2));
+
+	@media #{$lg,$xl} {
+		font-size: 65px;
+		line-height: 70px;
+	}
+
+	@media #{$lg,$md} {
+		font-size: var(--st-fz-tab-h2);
+		line-height: var(--st-lh-h2-tab);
+	}
+
+	@media #{$sm, $xs} {
+		font-size: var(--st-fz-mob-h2);
+		line-height: var(--st-lh-h2-mob);
+	}
 }
 
 h3 {
-font-size: var(--st-fz-h3);
-line-height: var(--st-lh-h3);
-@media #{$md}{
-font-size: var(--st-fz-tab-h3);
-line-height: var( --st-lh-h3-tab);
-}
-@media #{$sm, $xs}{
-	font-size: var(--st-fz-mob-h3);
-	line-height: var(--st-lh-h3-mob);
-}
+	font-size: var(--st-fz-h3);
+	line-height: var(--st-lh-h3);
+
+	@media #{$md} {
+		font-size: var(--st-fz-tab-h3);
+		line-height: var(--st-lh-h3-tab);
+	}
+
+	@media #{$sm, $xs} {
+		font-size: var(--st-fz-mob-h3);
+		line-height: var(--st-lh-h3-mob);
+	}
 }
 
 h4 {
-font-size: var(--st-fz-h4);
-line-height: var(--st-lh-h4);
-@media #{$md}{
-font-size: var(--st-fz-tab-h4);
-line-height: var( --st-lh-h4-tab);
-}
-@media #{$sm, $xs}{
-	font-size: var(--st-fz-mob-h4);
-	line-height: var(--st-lh-h4-mob);
-}
+	font-size: var(--st-fz-h4);
+	line-height: var(--st-lh-h4);
+
+	@media #{$md} {
+		font-size: var(--st-fz-tab-h4);
+		line-height: var(--st-lh-h4-tab);
+	}
+
+	@media #{$sm, $xs} {
+		font-size: var(--st-fz-mob-h4);
+		line-height: var(--st-lh-h4-mob);
+	}
 }
 
 h5 {
-font-size: var(--st-fz-h5);
-line-height: var(--st-lh-h5);
-@media #{$md}{
-font-size: var(--st-fz-tab-h5);
-line-height: var( --st-lh-h5-tab);
-}
-@media #{$sm, $xs}{
-	font-size: var(--st-fz-mob-h5);
-	line-height: var(--st-lh-h5-mob);
-}
+	font-size: var(--st-fz-h5);
+	line-height: var(--st-lh-h5);
+
+	@media #{$md} {
+		font-size: var(--st-fz-tab-h5);
+		line-height: var(--st-lh-h5-tab);
+	}
+
+	@media #{$sm, $xs} {
+		font-size: var(--st-fz-mob-h5);
+		line-height: var(--st-lh-h5-mob);
+	}
 }
 
 h6 {
-font-size: var(--st-fz-h6);
-line-height: var(--st-lh-h6);
-@media #{$md}{
-font-size: var(--st-fz-tab-h6);
-line-height: var( --st-lh-h6-tab);
-}
-@media #{$sm, $xs}{
-	font-size: var(--st-fz-mob-h6);
-	line-height: var(--st-lh-h6-mob);
-}
- 
+	font-size: var(--st-fz-h6);
+	line-height: var(--st-lh-h6);
+
+	@media #{$md} {
+		font-size: var(--st-fz-tab-h6);
+		line-height: var(--st-lh-h6-tab);
+	}
+
+	@media #{$sm, $xs} {
+		font-size: var(--st-fz-mob-h6);
+		line-height: var(--st-lh-h6-mob);
+	}
+
 }
 
 ul {
@@ -160,15 +174,18 @@ p {
 	font-weight: var(--st-fw-normal);
 	color: var(--st-text-body);
 	line-height: 26px;
-	@media #{$md, $sm, $xs}{
+
+	@media #{$md, $sm, $xs} {
 		font-size: var(--st-fz-tab-body);
 	}
 }
 
+// Common Class
 
-.p-relative{
+.p-relative {
 	position: relative;
 }
-.p-absolute{
+
+.p-absolute {
 	position: absolute;
 }

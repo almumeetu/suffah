@@ -1,0 +1,80 @@
+// Header Main & Menu Css Start Here
+
+.header-main-area {
+    .main-menu {
+        nav {
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+
+                li {
+                    float: left;
+
+                    a {
+                        display: block;
+                        padding-right: 24px;
+                        font-weight: var(--st-fw-bold);
+                        line-height: 24px;
+                        color: var(--st-heading-primary);
+                        font-family: var(--st-ff-menu);
+                        @include transition(0.3s);
+
+                        &:hover {
+                            color: var(--st-theme-primary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .logo-area {
+        margin-top: -38px;
+    }
+
+    .right-action-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+        .header-search {
+            display: inline;
+            margin-right: 24px;
+
+            a {
+                @include transition(0.3s);
+
+                i {
+                    font-size: 24px;
+                }
+
+                &:hover {
+                    color: var(--st-theme-primary);
+                }
+            }
+        }
+
+        .header-offcanvas-menu {
+            display: inline;
+            margin-right: 24px;
+
+            a {
+                @include transition(0.3s);
+
+                i {
+                    font-size: 24px;
+                }
+
+                &:hover {
+                    color: var(--st-theme-primary);
+                }
+            }
+        }
+
+        .header-btn {
+            display: inline;
+        }
+    }
+}

@@ -1,35 +1,41 @@
-
 // Header Css Start Here
 
 // Header Top Css Start Here
 
-.header-top-area{
+.header-top-area {
     background: var(--st-bg-1);
     padding: 12px 0;
-    .header-top-info{
-        .location-info{
+
+    .header-top-info {
+        .location-info {
             display: inline;
             margin-right: 25px;
             color: var(--st-heading-primary);
             font-weight: var(--st-fw-regular);
         }
-        .mail-info{
+
+        .mail-info {
             display: inline;
             color: var(--st-heading-primary);
         }
     }
-    .header-social-info{
+
+    .header-social-info {
         text-align: end;
-        .social-info{
+
+        .social-info {
             display: inline;
             color: var(--st-heading-primary);
             font-weight: var(--st-fw-regular);
         }
-        .social-icon-wrapper{
+
+        .social-icon-wrapper {
             display: inline;
-            a{
+
+            a {
                 position: relative;
-                &::after{
+
+                &::after {
                     position: absolute;
                     content: "";
                     width: 2px;
@@ -37,16 +43,22 @@
                     background: var(--st-common-light-white);
                     top: 4px;
                 }
-                &:last-child{
-                        &::after {
+
+                &:last-child {
+                    &::after {
                         width: 0;
                         height: 0;
-                        }
+                    }
                 }
 
-                i{
+                i {
                     padding: 0 13px;
                     color: var(--st-heading-primary);
+                    @include transition(0.3s);
+
+                    &:hover {
+                        color: var(--st-theme-primary);
+                    }
                 }
             }
         }
