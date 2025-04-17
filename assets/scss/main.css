@@ -450,4 +450,8 @@ p {
 }
 .header-top-area .header-social-info .social-icon-wrapper a i:hover {
   color: var(--st-theme-primary);
+}
+
+.banner-area {
+  height: 700px;
 }/*# sourceMappingURL=main.css.map */
