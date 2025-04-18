@@ -383,6 +383,12 @@ p {
 }
 .header-main-area .logo-area {
   margin-top: -40px;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .header-main-area .logo-area {
+    text-align: left;
+  }
 }
 @media (max-width: 450px) {
   .header-main-area .logo-area {
