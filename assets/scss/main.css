@@ -32,6 +32,7 @@
   --st-fw-medium: 500;
   --st-fw-sbold: 600;
   --st-fw-bold: 700;
+  --st-fw-heading: 700;
   --st-fw-ebold: 800;
   --st-fw-black: 900;
   /**
@@ -91,6 +92,7 @@
   --st-fw-medium: 500;
   --st-fw-sbold: 600;
   --st-fw-bold: 700;
+  --st-fw-heading: 700;
   --st-fw-ebold: 800;
   --st-fw-black: 900;
   /**
@@ -309,6 +311,10 @@ p {
 
 .p-absolute {
   position: absolute;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
 }
 
 .primary-btn {
@@ -736,6 +742,17 @@ p {
   padding: 10px !important;
 }
 
+.section-title .subtitle {
+  margin-bottom: 0;
+}
+.section-title .subtitle span {
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  font-family: var(--st-ff-menu);
+  font-weight: var(--st-fw-bold);
+}
+
 .header-top-area {
   background: var(--st-bg-1);
   padding: 12px 0;
@@ -828,4 +845,49 @@ p {
 
 .banner-area {
   height: 700px;
+  padding-top: 60PX;
+}
+.banner-area .section-title {
+  margin-bottom: 33px;
+}
+
+.info-main-wrapper {
+  padding-top: 120px;
+}
+.info-main-wrapper .info-title {
+  background-image: url("/assets/img/bg-img/quote-icon.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 80px;
+}
+.info-main-wrapper .info-title h2 {
+  text-align: center;
+}
+.info-main-wrapper .info-counter {
+  margin-bottom: 120px;
+}
+.info-main-wrapper .info-counter .info-single-count {
+  border: 1px solid var(--st-border-1);
+  padding: 32px 24px;
+  transition: all 0.4s ease-out 0s;
+}
+.info-main-wrapper .info-counter .info-single-count .info-icon {
+  margin-bottom: 10px;
+}
+.info-main-wrapper .info-counter .info-single-count .info-author {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: var(--st-ff-menu);
+  font-weight: var(--st-fw-bold);
+  display: block;
+}
+.info-main-wrapper .info-counter .info-single-count:hover {
+  border: 1px solid var(--st-theme-primary);
+  box-shadow: 0 0 3px var(--st-border-1), 0 0 1px var(--st-theme-primary);
+}
+
+.about-us {
+  background-image: url("/assets/img/bg-img/about-bg.png");
+  padding-top: 120px;
+  padding-bottom: 120px;
 }/*# sourceMappingURL=main.css.map */
