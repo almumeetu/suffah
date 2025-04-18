@@ -21,7 +21,6 @@
                         line-height: 24px;
                         white-space: nowrap;
                         @include transition(0.3s);
-
                         &:hover {
                             color: var(--st-theme-primary);
                         }
@@ -29,6 +28,13 @@
                         i {
                             margin-left: 6px;
                             transition: 0.3s;
+                            @media #{$lg} {
+                                margin-left: 0;
+                            }
+                        }
+                        @media #{$lg} {
+                            font-size: 16px;
+                            padding-right: 8px;
                         }
                     }
                 }
@@ -39,12 +45,19 @@
 
     .logo-area {
         margin-top: -40px;
+        @media #{$xss}{
+            text-align: center;
+        }
+        
     }
 
     .right-action-wrapper {
         display: flex;
         align-items: center;
         justify-content: end;
+        @media #{$xss}{
+            justify-content: center;
+        }
 
         .header-search {
             display: inline;
@@ -82,7 +95,24 @@
 
         .header-btn {
             display: inline;
+            .primary-btn{
+                @media #{$lg,$md,$sm,$xs} {
+                    font-size: 16px;
+                    padding: 15px;
+                }
+            }
         }
+    }
+}
+
+// Header main Culumn Responsive
+
+@media #{$xss} {
+    .col-3{
+        width: 100%;
+    }
+    .col-9{
+        width: 100%;
     }
 }
 
@@ -284,12 +314,12 @@
 .offcanvas-menu {
     position: fixed;
     top: 0;
-    right: -540px;
-    width: 540px;
+    right: -330px;
+    width: 330px;
     height: 100%;
     background: #fff;
     box-shadow: -4px 0 20px rgba(0, 0, 0, 0.2);
-    padding: 60px;
+    padding: 30px;
     @include transition(0.4s);
     z-index: 9999;
 }
@@ -314,7 +344,7 @@
 }
 
 .offcanvas-wrapper{
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     border-bottom: 1px solid var(--st-border-1);
     .offcanvas-logo{
         margin-bottom: 20px;
@@ -324,15 +354,101 @@
     }
 }
 .offcanvas-menu-list{
-    padding-top: 60px;
-    .offcanvas-menu-wrapper{
-        nav{
-            ul{
-                flex-direction: column;
-                li{
-                    margin-bottom: 20px;
-                }
-            }
+    padding-top: 10px;
+    .offcanvas-menu-wrapper {
+        background-color: #fff;
+        padding: 20px;
+      
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          flex-direction: column;
         }
-    }
+      
+        li {
+          position: relative;
+          border-bottom: 1px solid #eaeaea;
+      
+          &.has-dropdown {
+            > a {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 14px 18px;
+              font-size: 16px;
+              color: #222;
+              font-weight: 500;
+              cursor: pointer;
+              transition: background 0.3s;
+      
+              i {
+                transition: transform 0.3s ease;
+              }
+      
+              &:hover {
+                background-color: #f7f7f7;
+              }
+            }
+      
+            .submenu {
+              max-height: 0;
+              overflow: hidden;
+              opacity: 0;
+              visibility: hidden;
+              transition: all 0.4s ease;
+              background-color: #fafafa;
+      
+              li {
+                border-bottom: 1px solid #eee;
+      
+                a {
+                  display: block;
+                  padding: 12px 30px;
+                  font-size: 15px;
+                  color: #444;
+                  transition: background 0.3s;
+      
+                  &:hover {
+                    background-color: #efefef;
+                  }
+                }
+              }
+      
+              &.open {
+                max-height: 500px;
+                opacity: 1;
+                visibility: visible;
+              }
+            }
+          }
+      
+          // Regular menu item (no dropdown)
+          &:not(.has-dropdown) a {
+            display: block;
+            padding: 14px 18px;
+            font-size: 16px;
+            color: #222;
+            font-weight: 500;
+            transition: background 0.3s;
+      
+            &:hover {
+              background-color: #f7f7f7;
+            }
+          }
+        }
+
+        .mega-menu:hover > .mega-submenu {
+            opacity: 1;
+            visibility: visible;
+            top: 45px;
+            transform: translateY(0);
+            left: 40px;
+            padding: 10px !important;
+        }
+      }
 }
+
+
+
+

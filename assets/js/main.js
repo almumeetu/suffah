@@ -61,3 +61,47 @@ function initializeSearchOverlay() {
     initializeOffcanvasMenu();
   });
   
+
+//Off canvas menu
+// Handle submenu toggle
+document.querySelectorAll('.offcanvas-menu-wrapper .has-dropdown > a').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const submenu = this.nextElementSibling;
+    const parentLi = this.parentElement;
+
+    // Close all submenus except the one clicked
+    document.querySelectorAll('.offcanvas-menu-wrapper .submenu').forEach(other => {
+      if (other !== submenu) {
+        other.classList.remove('open');
+        const otherIcon = other.parentElement.querySelector('i');
+        if (otherIcon) otherIcon.classList.remove('rotated');
+      }
+    });
+
+    // Toggle current submenu
+    submenu.classList.toggle('open');
+
+    // Rotate current icon
+    const icon = this.querySelector('i');
+    if (icon) icon.classList.toggle('rotated');
+  });
+});
+
+// Handle outside click
+window.addEventListener('click', function (e) {
+  const isClickInsideMenu = e.target.closest('.offcanvas-menu-wrapper');
+  if (!isClickInsideMenu) {
+    document.querySelectorAll('.offcanvas-menu-wrapper .submenu').forEach(menu => {
+      menu.classList.remove('open');
+    });
+
+    document.querySelectorAll('.offcanvas-menu-wrapper .has-dropdown i').forEach(icon => {
+      icon.classList.remove('rotated');
+    });
+  }
+});
+
+
