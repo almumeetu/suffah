@@ -1,0 +1,23 @@
+//Service details Css Start here
+.service-details{
+    .service-details-content-wrapper{
+        .service-details-img{
+            img{
+                width: 100%;
+            }
+        }
+        .service-details-dual-img{
+            gap: 32px;
+            @media #{$xs, $sm, $md}{
+                flex-direction: column;
+                gap: 24px;
+            }
+            @media #{$lg}{
+                gap: 24px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,198 @@
+// Header Css Start Here
+
+// Header Top Css Start Here
+.header-top-area {
+    background: var(--st-bg-1);
+    padding: 12px 0;
+
+    @media #{$sm,$xs,$md,$lg} {
+       display: none;
+    }
+
+
+    .header-top-info {
+        .location-info {
+            display: inline;
+            margin-right: 25px;
+            color: var(--st-heading-primary);
+            font-weight: var(--st-fw-regular);
+
+            @media #{$lg,$md,$sm,$xs} {
+                font-size: var(--st-fz-p2);
+            }
+
+            @media #{$xs} {
+                display: block;
+            }
+        }
+
+        .mail-info {
+            display: inline;
+            color: var(--st-heading-primary);
+        }
+
+        @media #{$lg,$md,$sm,$xs} {
+            font-size: var(--st-fz-p2);
+        }
+
+        @media #{$md,$sm,$xs} {
+            text-align: center;
+        }
+    }
+
+    .header-social-info {
+        text-align: end;
+
+        @media #{$md,$sm,$xs} {
+            text-align: center;
+        }
+
+        .social-info {
+            display: inline;
+            color: var(--st-heading-primary);
+            font-weight: var(--st-fw-regular);
+
+            @media #{$lg,$md,$sm,$xs} {
+                font-size: var(--st-fz-p2);
+            }
+        }
+    }
+}
+
+
+
+// Header-v2 Css Start Here
+.header-top-area-v2 {
+    padding: 0;
+
+    .header-top-notification {
+        position: relative;
+        width: 100%;
+        height: 60px;
+
+        overflow: hidden;
+        p {
+            color: var(--st-heading-primary);
+            @media #{$xs, $sm, $md} {
+               font-size: var(--st-fz-p2);
+            }
+        }
+        .notification-header {
+            top: 16px;
+        }
+    }
+}
+
+.header-main-area-v2 {
+    border-top: 1px solid var(--st-border-1);
+    background: $bg-color;
+
+    .logo-area {
+        margin-top: -7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media #{$md,$sm,$xs,$lg} {
+            justify-content: left;
+            margin-top: 0;
+        }
+        a {
+            display: block;
+        }
+        .logo-bg {
+            position: relative;
+            max-width: 112px;
+            max-height: 120px;
+            @media #{$sm,$xs} {
+                max-width: 70px;
+                max-height: 70px;
+            }
+            @media #{$lg,$md} {
+                max-width: 85px;
+            }
+            svg {
+                width: 100%;
+                height: 100%;
+                path {
+                    fill: var(--st-theme-primary);
+                }
+            }
+            .main-logo {
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                svg {
+                    width: 100%;
+                    height: 100%;
+                    path {
+                        fill: var(--st-common-white);
+                    }
+                }
+            }
+        }
+    }
+
+    .call-us-btn {
+        @media #{$md} {
+            display: block !important;
+            padding-left: 12px;
+        }
+        .call-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--st-theme-primary);
+            background: var(--st-theme-primary);
+            margin-right: var(--st-fz-p2);
+            border-radius: 4px;
+
+            @media #{$xss} {
+                margin-right: 7px;
+            }
+
+            @include transition (0.3s);
+
+            i {
+                font-size: 24px;
+                color: var(--st-common-white);
+                @include transition (0.3s);
+            }
+
+            &:hover {
+                background: var(--st-common-white);
+            }
+
+            &:hover i {
+                color: var(--st-theme-primary);
+            }
+        }
+
+        .btn-text {
+            span {
+                display: block;
+                color: var(--st-common-body);
+
+                @media #{$xss} {
+                    font-size: var(--st-fz-p2);
+                }
+            }
+
+            b {
+                font-family: var(--st-ff-menu);
+                font-weight: var(--st-fw-bold);
+                @media #{$xss} {
+                    font-size: var(--st-fz-p2);
+                }
+            }
+        }
+    }
+
+    .right-action-wrapper {
+        @media #{$xss} {
+            padding: 20px 0;
+        }
+    }
+}

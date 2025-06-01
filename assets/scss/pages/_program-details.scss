@@ -1,0 +1,142 @@
+//Program Details Css Start Here
+.program-details {
+    .program-details-content-wrapper{
+    .program-details-img{
+        img{
+            width: 100%;
+        }
+    }
+    .keypoient-program {
+        .program-list{
+            ul{
+                li{
+                    gap: 4px;
+                }
+            }
+        }
+    }
+    .program-details-dual-img{
+        gap: 32px;
+        @media #{$xs, $sm, $md}{
+            flex-direction: column;
+            gap: 24px;
+        }
+        @media #{$lg}{
+            gap: 24px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+    .program-sidebar-wrapper {
+        .program-information-sidebar {
+            .widget-container {
+                .program-information-items {
+                    ul {
+                        li {
+                            padding: 24px 0;
+                            border-bottom: 1px solid var(--st-border-1);
+                            cursor: pointer;
+
+                            .left,
+                            .right {
+                                gap: 8px;
+
+                                span {
+                                    color: var(--st-heading-primary);
+                                    @include transition (.3s);
+                                }
+
+                                svg {
+                                    path {
+                                        fill: var(--st-heading-primary);
+                                        @include transition (.3s);
+                                    }
+                                }
+                            }
+
+                            &:hover span {
+                                color: var(--st-theme-primary);
+                            }
+
+                            &:hover svg path {
+                                fill: var(--st-theme-primary);
+                            }
+
+                            &:first-child {
+                                padding-top: 0;
+                            }
+
+                        }
+                    }
+                }
+
+                .blog-social-share {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 12px;
+
+                    @media #{ $sm, $xs } {
+                        justify-content: flex-start;
+                    }
+
+                    p {
+                        display: inline-block;
+                        color: var(--st-heading-primary);
+                    }
+
+                    ul {
+                        display: inline-flex;
+                        justify-content: flex-start;
+                        align-items: center;
+
+                        li {
+                            position: relative;
+                            padding-right: 12px;
+                            margin-right: 12px;
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                right: 0;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                width: 1px;
+                                height: 16px;
+                                background: var(--st-border-1);
+                            }
+
+                            i {
+                                font-size: 20px;
+                                line-height: 30px;
+                                color: var(--st-heading-primary);
+                                @include transition (.3s);
+                            }
+
+                            &:hover {
+                                i {
+                                    color: var(--st-theme-primary);
+                                }
+                            }
+
+                            &:last-child {
+                                padding-right: 0;
+                                margin-right: 0;
+
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                        }
+
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+//Program Details Css End Here

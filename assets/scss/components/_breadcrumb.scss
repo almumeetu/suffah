@@ -1,0 +1,48 @@
+.page-banner {
+  padding: 140px 0 170px;
+  position: relative;
+  text-align: center;
+  color: var(--st-common-white);
+
+  .page-title {
+    color: var(--st-common-white);
+    padding-bottom: 24px;
+  }
+
+  .breadcrumb {
+    background: transparent;
+    margin-bottom: 0;
+    .breadcrumb-item {
+      color: var(--st-common-white);
+      a {
+        color: var(--st-common-light-white);
+        text-decoration: none;
+        transition: color 0.3s;
+        font-weight: var(--st-fw-bold);
+        &:hover {
+          color: var(--st-common-white);
+        }
+      }
+
+      &::before {
+        color: var(--st-common-white);
+        content: "›"; 
+        font-size: 20px;
+        padding: 0 0.5rem;
+      }
+
+      &.active {
+        color: var(--st-theme-primary);
+         font-weight: var(--st-fw-bold);
+      }
+    }
+
+    .breadcrumb-item:first-child::before {
+      display: none;
+    }
+  }
+}
+
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: 0;
+}

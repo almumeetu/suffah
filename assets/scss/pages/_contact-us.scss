@@ -1,0 +1,113 @@
+// Contact Us - Page CSS Starts Here
+.contact-us {
+    .contact-row {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .custom-column-left {
+        padding-left: 60px;
+        padding-right: 0;
+        @media #{$xl,$lg} {
+            padding-left: 30px;
+        }
+        @media #{$md,$sm,$xs} {
+            padding-left: 0;
+        }
+    }
+    .custom-column-right {
+        padding-right: 60px;
+        padding-left: 0;
+        border-right: 1px solid var(--st-border-1);
+        @media #{$xl,$lg} {
+            padding-right: 30px;
+        }
+        @media #{$md} {
+            padding-right: 20px;
+        }
+        @media #{$md,$sm,$xs} {
+            padding-right: 0;
+            border-right: none;
+        }
+    }
+    .sidebar-title {
+        h2 {
+            @media #{$lg} {
+                font-size: 38px;
+                line-height: 48px;
+            }
+        }
+    }
+    .area-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 32px 48px;
+        @media #{$lg,$md,$sm,$xs} {
+            padding: 24px;
+        }
+        i {
+            font-size: 32px;
+            color: var(--st-common-black);
+        }
+    }
+    .area-wrapper {
+        border: 1px solid var(--st-border-1);
+        .f-content {
+            line-height: 1;
+            p{
+                font-weight: var(--st-fw-bold);
+                color: var(--st-heading-primary);
+                padding-bottom: 8px;
+            }
+            a {
+                color: var(--st-text-body);
+            }
+        }
+        .infobox {
+            display: flex;
+            gap: 12px;
+            border-bottom: 1px solid var(--st-border-1);
+            &:last-of-type {
+                border-bottom: none;
+            }
+            i {
+                font-size: 28px; 
+                width: 24px;
+                height: 24px;
+                line-height: 1;
+                display: inline-block;
+                text-align: center;
+            }
+            .contact-map {
+                width: 100%;
+                height: 200px;
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .area-content {
+            padding: 0 48px 24px 48px;
+            @media #{$lg,$md,$sm,$xs} {
+                padding: 0 24px;
+            }
+        }
+        .area-details[open] {
+            .area-title {
+                padding-bottom: 24px;
+                border-bottom: 1px solid var(--st-border-1);
+            }
+        }
+    }
+    .contact-form {
+        .form-row {
+            @media #{$md} {
+                flex-direction: column;
+            }
+        }
+        
+    }
+}
+
+// Contact Us - Page CSS Ends Here

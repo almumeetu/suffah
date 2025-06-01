@@ -1,0 +1,471 @@
+// Common Class
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.pl-0 {
+    padding-left: 0;
+
+    @media #{$xs,$sm,$md} {
+        padding-left: 12px;
+    }
+}
+
+.sl-wrapper .sl-navigation button.sl-next {
+    right: 22px;
+}
+
+.sl-wrapper .sl-navigation button.sl-prev {
+    left: 12px;
+}
+
+.header-offcanvas-menu button {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 24px;
+}
+
+.hr {
+    border-bottom: 1px solid var(--st-border-1);
+    padding-top: 35px;
+
+    @media #{$xs, $sm} {
+        padding-top: 0;
+    }
+}
+
+.about-us-apply-process {
+    @media #{$xs, $sm, $md} {
+        padding-top: 0 !important;
+    }
+
+    .apply-process-main-wrapper {
+        top: 0 !important;
+    }
+}
+
+.background-position {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-space {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    @media #{$md} {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @media #{$xs, $sm} {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.container-xxxl {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-menu-v1 {
+    max-width: 1520px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-menu-v2 {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.text-white {
+    color: var(--st-common-white);
+}
+
+.text-black {
+    color: var(--st-common-black);
+}
+
+.d-md-none-custom {
+    @media #{$md-custom} {
+        display: block !important;
+    }
+}
+
+.hr-v2 {
+    margin-bottom: -20px;
+
+    @media #{$xs} {
+        display: none;
+    }
+}
+
+.p-mob-0 {
+    @media #{$xs, $sm} {
+        padding: 0 !important;
+    }
+}
+
+.m-mob-0 {
+    @media #{$xs, $sm} {
+        margin: 0 !important;
+    }
+}
+
+.pb-xl-up-50 {
+    padding-bottom: 0;
+
+    @media (min-width: 1200px) {
+        padding-bottom: 50px;
+    }
+}
+
+
+//Sticky Header
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: $bg-color;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.3s ease-in-out;
+
+    .logo-area {
+        margin-top: 0;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+// Back to Top Button Styles 
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    background-color: var(--st-theme-primary);
+    color: #fff;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(8, 94, 36, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    background-color: #0b6f2d;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(8, 94, 36, 0.4);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+//Global Common Sidebar Style 
+.sidebar {
+    .widget-container {
+        padding: 32px;
+        border: 1px solid var(--st-grey-2);
+
+        @media #{$xs, $lg} {
+            padding: 18px;
+        }
+    }
+
+    .widget-title {
+        font-size: var(--st-fz-h4);
+        line-height: var(--st-lh-h4);
+        font-weight: var(--st-fw-heading);
+        color: var(--st-heading-primary);
+        border-bottom: 1px solid var(--st-grey-2);
+
+        @media #{$md, $lg} {
+            font-size: var(--st-fz-tab-h4);
+            line-height: var(--st-lh-h4-tab);
+        }
+
+        @media #{$sm, $xs} {
+            font-size: var(--st-fz-mob-h4);
+            line-height: var(--st-lh-h4-mob);
+        }
+    }
+}
+
+///////////////////////////
+//Preloader CSS Start Here//
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--st-theme-primary);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 9999;
+    animation: backgroundWave 1s ease-in-out infinite;
+}
+
+.loader svg {
+    width: 100px;
+    height: auto;
+    animation: logoWave 3s infinite ease-in-out;
+}
+
+.loader svg path {
+    fill: var(--st-common-white);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1199.98px) {
+  .custom-g-tab-mob {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem;
+  }
+}
+///////////////////////////
+//Custom Cursor CSS Start Here//
+a,
+button,
+input,
+textarea,
+select {
+    cursor: pointer;
+}
+
+.custom-cursor,
+.custom-cursor-follower {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    border-radius: 50%;
+    transition: transform 0.15s ease;
+}
+
+@media (hover: none) and (pointer: coarse) {
+
+    .custom-cursor,
+    .custom-cursor-follower {
+        display: none;
+    }
+
+    body {
+        cursor: auto;
+    }
+}
+
+.custom-cursor {
+    width: 8px;
+    height: 8px;
+    background-color: var(--st-theme-primary);
+    transform: translate(-50%, -50%);
+}
+
+.custom-cursor-follower {
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--st-theme-primary);
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease-out;
+    mix-blend-mode: abs($number: 5);
+}
+
+/*----------------------------------------*/
+/* Mobile css
+  /*----------------------------------------*/
+
+.menu-close {
+    position: absolute;
+    right: 0;
+    top: 11px;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    background: $bg-color;
+    border: 1px solid rgba(1, 15, 28, 0.12);
+
+    @media #{$xs} {
+        top: 9px;
+    }
+}
+
+.menu-close i {
+    transition: all 0.3s;
+}
+
+
+/*----------------------------------------*/
+/*offcanvas css
+  /*----------------------------------------*/
+.body-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99998;
+    background: rgba(0, 0, 0, 0.7);
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.body-overlay.opened {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+.offcanvas-logo svg {
+    max-width: 60px;
+    width: 100%;
+}
+
+
+.offcanvas-area {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 100%;
+    z-index: 99999;
+    padding: min(48px, 8%);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    background: var(--st-common-white);
+    overscroll-behavior-y: contain;
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+    transition-delay: 0s;
+    background-image: url("/assets/img/event/bg-pattern.png");
+    background-repeat: no-repeat;
+}
+
+.offcanvas-area.opened {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition-delay: 0.5s; // Waits until overlay finishes
+}
+
+
+// Responsive rules remain unchanged
+@media #{$xss} {
+    .offcanvas-area {
+        padding: 35px 30px;
+    }
+}
+
+@media #{$xs} {
+    .offcanvas-area {
+        width: 100%;
+    }
+}
+
+@media #{$sm} {
+    .offcanvas-area {
+        width: 450px;
+    }
+}
+
+
+.offcanvas-top {
+    margin-bottom: 16px;
+}
+
+.offcanvas-close-btn {
+    border: none;
+    background: none;
+    outline: none;
+    color: var(--st-common-white);
+    width: 40px;
+    height: 40px;
+    background: var(--st-theme-primary);
+    font-size: 20px;
+    @include transition(.3s);
+    border: 1px solid transparent;
+
+    &:hover svg path {
+        stroke: var(--st-theme-primary);
+    }
+
+    &:hover {
+        background: var(--st-common-white);
+        border: 1px solid var(--st-theme-primary);
+    }
+
+    svg {
+        width: 30px;
+    }
+}
+
+.offcanvas-close-btn svg path {
+    @include transition (.3s);
+}
+
+.offcanvas-content {
+    margin-bottom: 32px;
+}
+
+.offcanvas-title.sm {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--st-theme-primary);
+    font-weight: var(--st-fw-bold);
+}
+
+.offcanvas-title {
+    margin-bottom: 24px;
+}
+
+.offcanvas-logo a svg path {
+    fill: var(--st-theme-primary);
+}
+

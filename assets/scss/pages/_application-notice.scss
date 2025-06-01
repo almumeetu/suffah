@@ -1,0 +1,13 @@
+.application-main-wrapper{
+    max-width: 870px;
+    width: 100%;
+    margin: 0 auto;
+    h6{
+        font-size: var(--st-fz-body);
+        color: var(--st-common-body);
+        font-family: var(--st-ff-p);
+        @media #{$xs}{
+            font-size: var(--st-fz-p2);
+        }
+    }
+}

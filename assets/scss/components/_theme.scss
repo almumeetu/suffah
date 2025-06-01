@@ -46,6 +46,11 @@ body {
 	color: var(--st-text-body);
 	line-height: var(--st-lh-body);
 	overflow-x: hidden;
+
+	@media #{$xs} {
+		font-size: var(--st-fz-p2);
+		line-height: var(--st-lh-p2);
+	}
 }
 
 a {
@@ -61,9 +66,8 @@ h5,
 h6 {
 	font-family: var(--st-ff-heading);
 	color: var(--st-heading-primary);
-	margin-top: 0px;
+	margin: 0;
 	font-weight: var(--st-fw-heading);
-	line-height: 1.2;
 	@include transition(.3s);
 }
 
@@ -86,12 +90,7 @@ h2 {
 	font-size: var(--st-fz-h2);
 	line-height: var((--st-lh-h2));
 
-	@media #{$lg,$xl} {
-		font-size: 65px;
-		line-height: 70px;
-	}
-
-	@media #{$lg,$md} {
+	@media #{$md} {
 		font-size: var(--st-fz-tab-h2);
 		line-height: var(--st-lh-h2-tab);
 	}
@@ -108,7 +107,6 @@ h3 {
 
 	@media #{$md} {
 		font-size: var(--st-fz-tab-h3);
-		line-height: var(--st-lh-h3-tab);
 	}
 
 	@media #{$sm, $xs} {
@@ -166,6 +164,7 @@ h6 {
 ul {
 	margin: 0px;
 	padding: 0px;
+	list-style: none;
 }
 
 p {
@@ -173,22 +172,10 @@ p {
 	font-size: var(--st-fz-body);
 	font-weight: var(--st-fw-normal);
 	color: var(--st-text-body);
-	line-height: 26px;
-
-	@media #{$md, $sm, $xs} {
-		font-size: var(--st-fz-tab-body);
+	line-height: var(--st-lh-p);
+	margin: 0;
+	@media #{$xs} {
+		font-size: var(--st-fz-p2);
+		line-height: var(--st-lh-p2);
 	}
-}
-
-// Common Class
-
-.p-relative {
-	position: relative;
-}
-
-.p-absolute {
-	position: absolute;
-}
-.mb-20 {
-	margin-bottom: 20px;
 }

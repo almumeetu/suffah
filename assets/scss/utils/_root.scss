@@ -40,16 +40,16 @@
             --st-#{$fz}-#{$shade}: #{$value};
         }
     }
-    // @each $fz-mob, $shades in $font-size-mob {
-    //     @each $shade, $value in $shades {
-    //         --st-#{$fz-mob}-#{$shade}: #{$value};
-    //     }
-    // }
-    // @each $fz-tab, $shades in $font-size-tab {
-    //     @each $shade, $value in $shades {
-    //         --st-#{$fz-tab}-#{$shade}: #{$value};
-    //     }
-    // }
+    @each $fz-mob, $shades in $font-size-mob {
+        @each $shade, $value in $shades {
+            --st-#{$fz-mob}-#{$shade}: #{$value};
+        }
+    }
+    @each $fz-tab, $shades in $font-size-tab {
+        @each $shade, $value in $shades {
+            --st-#{$fz-tab}-#{$shade}: #{$value};
+        }
+    }
 
     /**
     @line height declaration

@@ -43,28 +43,30 @@ $font-size: (
         h6: 24px, 
     )
 );
-// $font-size-mob: (
-//     fz-mob: (
-//         h1: 48px,
-//         h2: 38px,
-//         h3: 24px ,
-//         h4: 22px,
-//         h5: 24px,
-//         h6: 20px, 
-//     )
-// );
-// $font-size-tab: (
-//     fz-tab: (
-//         body: 18px,
-//         h1: 65px,
-//         h2: 50px,
-//         h3: 38px ,
-//         h4: 42px,
-//         h5: 34px,
-//         h6: 30px, 
-//     )
-// );
 
+$font-size-mob: (
+    fz-mob: (
+        body: 16px,
+        h1: 36px,
+        h2: 30px,
+        h3: 26px ,
+        h4: 22px,
+        h5: 20px,
+        h6: 18px, 
+    )
+);
+
+$font-size-tab: (
+    fz-tab: (
+        body: 18px,
+        h1: 48px,
+        h2: 40px,
+        h3: 32px ,
+        h4: 28px,
+        h5: 24px,
+        h6: 20px, 
+    )
+);
 //Line Height
 
 $line-height: (
@@ -78,5 +80,17 @@ $line-height: (
         h4: 40px,
         h5: 36px,
         h6: 32px, 
+        h1-tab: 60px,
+        h2-tab: 50px,
+        h3-tab: 40px,
+        h4-tab: 36px,
+        h5-tab: 32px,
+        h6-tab: 28px,
+        h1-mob: 48px,
+        h2-mob: 40px,
+        h3-mob: 32px,
+        h4-mob: 28px,
+        h5-mob: 26px,
+        h6-mob: 24px,
     )
 );

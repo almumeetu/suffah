@@ -1,0 +1,269 @@
+
+// Application Form - Page CSS Start Here
+
+.application-area {
+    .admission-box {
+        background: var(--st-bg-1);
+        padding: min(32px, 8%);
+        border-left: 2px solid var(--st-theme-primary);
+        .label {
+            font-weight: var(--st-fw-bold);
+            font-family: var(--st-ff-heading);
+            color: var(--st-heading-primary);
+            padding-right: 8px;
+            line-height: var(--st-lh-p2);
+        }
+    }
+    summary {
+        list-style: none; 
+    }
+    summary::-webkit-details-marker {
+        display: none;
+    }
+    .application-form-wrapper {
+        border: 1px solid var(--st-border-1);
+        .application-form {
+            padding: 32px 60px;
+            border-bottom: 1px solid var(--st-border-1);
+            &:first-of-type {
+                padding: 60px 60px 32px 60px;
+            }
+            @media #{$sm} {
+                padding: 24px 30px;
+                &:first-of-type {
+                    padding: 30px 30px 24px 30px;
+                }
+            }
+            @media #{$xs} {
+                padding: 24px 15px;
+                &:first-of-type {
+                    padding: 15px 15px 24px 15px;
+                }
+            }
+        }
+        .gpa-row {
+            @media #{$lg,$sm} {
+                flex-direction: column;
+            }
+        }
+        .address-details {
+            .title-wrapper {
+                display: flex;
+                align-items: baseline;
+                gap: 8px;
+            }
+            
+        }
+        .address-details,
+        .education-details,
+        .additional-info {
+            .form-title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                i {
+                    font-size: 32px;
+                    color: var(--st-common-black);
+                }
+                strong {
+                    font-size: var(--st-fz-h4);
+                    line-height: var(--st-lh-h4);
+                    font-family: var(--st-ff-heading);
+                    color: var(--st-heading-primary);
+                    margin: 0;
+                    font-weight: var(--st-fw-heading);
+                    transition: all 0.3s ease-out 0s;
+                    @media #{$md} {
+                        font-size: var(--st-fz-tab-h4);
+                        line-height: var(--st-lh-h4-tab);
+                    }
+                
+                    @media #{$sm, $xs} {
+                        font-size: var(--st-fz-mob-h4);
+                        line-height: var(--st-lh-h4-mob);
+                    }
+                }
+            }
+            
+        }
+        .permanent-title {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            span {
+                font-family: var(--st-ff-p);
+                font-size: var(--st-fz-body);
+                font-weight: var(--st-fw-normal);
+                color: var(--st-text-body);
+                line-height: 26px;
+                margin: 0;
+            }
+        }
+        .file-input-label {
+            cursor: pointer;
+            .button-text {
+                padding: 10px 24px;
+                background: var(--st-bg-1);
+                @media #{$xs} {
+                    width: 100%;
+                    padding: 10px 16px;
+                }
+            }
+            .file-name {
+                padding: 2px 16px;
+                margin-left: 16px;
+                border-left: 1px solid var(--st-border-1);
+                @media #{$xs} {
+                    width: 100%;
+                    padding: 10px 16px;
+                    margin-left: 0;
+                    border-left: none;
+                }
+            }
+            .file-input {
+                opacity: 0;
+                position: absolute;
+                z-index: -1;
+            }
+        }
+        .image-upload {
+            label {
+                display: flex;
+                padding-bottom: 0 !important;
+                border: 1px solid var(--st-border-1);
+                align-items: center;
+                @media #{$xs} {
+                    flex-direction: column;
+                }
+            }
+        }
+        .confirmation-form {
+            padding: 32px 60px 60px 60px;
+            @media #{$sm} {
+                padding: 24px 30px 30px 30px;
+            }
+            @media #{$xs} {
+                padding: 24px 15px 30px 15px;
+            }
+            p {
+                line-height: 28px;
+            }
+            input[type="checkbox"] {
+                appearance: none;
+                -webkit-appearance: none;
+                min-width: 18px;
+                min-height: 18px;
+                border: 3px solid var(--st-text-body);
+                border-radius: 0;
+                cursor: pointer;
+                position: relative;
+                @media #{$xs} {
+                    min-width: 16px;
+                    min-height: 16px;
+                    margin-top: 5px;
+                }
+                &:checked {
+                    background: var(--st-theme-primary);
+                    border: 3px solid var(--st-theme-primary);
+                }
+                &:checked::after {
+                    content: '';
+                    position: absolute;
+                    top: 1px;
+                    left: 4px;
+                    width: 5px;
+                    height: 10px;
+                    border: solid var(--st-common-white);
+                    border-width: 0 2.5px 2.5px 0;
+                    transform: rotate(45deg);
+                }
+            }
+            .checkbox-label {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                @media #{$xs} {
+                    align-items: start;
+                }
+                a {
+                color: var(--st-theme-primary);
+                text-decoration: underline;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .application-area-sidebar {
+        @media #{$md, $sm, $xs} {
+            padding-top: 32px;
+        }
+        .widget-title {
+            h4 {
+                @media #{$lg} {
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+                
+            }
+        }
+    }
+    .form-wrapper {
+        border-top: 1px solid var(--st-border-1);
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        .form-row {
+            display: flex;
+            gap: 24px;
+            @media #{$xs} {
+                gap: 12px;
+            }
+            @media #{$xs} {
+                flex-direction: column;
+            }
+        }
+        .form-group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            label {
+                padding-bottom: 8px;
+            }
+            input,
+            textarea {
+                padding: 10px 16px;
+                border: 1px solid var(--st-border-1);
+            }
+            textarea {
+                min-height: 160px;
+                resize: none;
+            }
+            select {
+                appearance: none;
+            }
+            input[type="date"] {
+                color: var(--st-text-body); 
+            }
+            input[type="date"]::-webkit-calendar-picker-indicator {
+                filter: invert(37%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(96%) contrast(90%);
+            }
+            .form-select {
+                padding: 10px 16px;
+                border: 1px solid var(--st-border-1);
+                border-radius: 0;
+                font-size: unset;
+                color: var(--st-text-body);
+                background-position: right 20px center;
+                background-size: 10px 30px;
+            }
+        }
+    }
+}
+
+
+// Application Form - Page CSS End Here

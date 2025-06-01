@@ -1,0 +1,82 @@
+//Social Icon CSS
+.social-icon-wrapper {
+    display: inline;
+
+    a {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 2px;
+            height: 16px;
+            background: var(--st-common-light-white);
+            top: 4px;
+        }
+
+        &:last-child {
+            &::after {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        i {
+            padding: 0 13px;
+            color: var(--st-heading-primary);
+            @include transition(0.3s);
+
+            &:hover {
+                color: var(--st-theme-primary);
+            }
+
+            @media #{$xss,$xs, $sm} {
+                padding: 0 7px;
+            }
+        }
+    }
+}
+
+//Footer Social Icon Css
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+
+    a {
+        i {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+            border: 1px solid var(--st-border-1);
+            font-size: 22px;
+            @include transition(0.3s);
+
+            &:hover {
+                background: var(--st-theme-primary);
+                color: var(--st-common-white);
+            }
+        }
+    }
+}
+
+.footer-social-v2 {
+    margin-top: -20px;
+    max-width: 220px;
+    width: 100%;
+    margin: 0 auto;
+    background: $bg-color;
+            @media #{$xs} {
+                 margin: 0;
+            }
+    a {
+        i {
+            border-radius: 4px;
+        }
+    }
+}
+
+

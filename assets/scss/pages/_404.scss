@@ -1,0 +1,20 @@
+//404 CSS Start Here
+
+.error-404-wrapper{
+    .content-wrapper-404 {
+        max-width: 440px;
+        width: 100%;
+        margin: 0 auto;
+        .img-404 {
+            max-width: 280px;
+            width: 100%;
+            margin: 0 auto;
+            @media #{$xs, $sm}{
+                max-width: 200px;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

@@ -2,7 +2,8 @@ $colors: (
     common: (
         white: #ffffff,
         black: #111111,
-        light-white: rgba(238, 238, 238, 1),
+        light-white: #eeeeee,
+        body: #6a6a6a,
     ),
     heading: (
         primary: #111111,
@@ -15,11 +16,11 @@ $colors: (
         body:#6A6A6A,
     ),
     theme: (
-        primary: rgba(10, 153, 60, 1), 
-        secondery: rgba(251, 197, 12, 1),
+        primary: #167a37, 
+        secondery: #fbc50c,
     ),
     border: (
-        1: rgba(238, 238, 238, 1),
+        1: #eeeeee,
     ),
     bg: (
         1: #F3FAF5,

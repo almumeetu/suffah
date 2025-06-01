@@ -1,0 +1,68 @@
+
+//About US- Page CSS Start Here
+
+
+
+//Program-Section CSS Start Here
+.program{
+    .program-content-wrapper{
+        .single-program-wrapper{
+            padding: 0 48px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+            @media #{$xs,$md, $lg} {
+                padding: 0 25px;
+            }
+            .single-program{
+                padding: 40px 0 30px 0;
+                border-bottom: 4px solid var(--st-theme-primary);
+                @media #{$xs,$sm} {
+                     justify-self: center;
+                }
+                @media #{$xs, $md, $lg} {
+                     padding: 15px 0 15px 0;
+                }
+               .program-title{
+                    padding-bottom: 15px;
+                    padding-top: 50px;
+               } 
+               .program-list{
+                nav{
+                    ul{
+                        li{
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                            padding-bottom: 16px;
+                            cursor: pointer;
+                            svg {
+                                path{
+                                    color: var(--st-heading-primary);
+                                    @include transition (.3s);
+                                }
+                            }
+                            span{
+                                color: var(--st-heading-primary);
+                                @include transition (.3s);
+                                display: block;
+                            }
+                            &:hover svg path{
+                                fill: var(--st-theme-primary);
+                            }
+                            &:hover span{
+                                color: var(--st-theme-primary);
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+               }
+            }
+        }
+    }
+}
+//Program-Section CSS End Here
+
+
+//About Us- Page CSS End Here

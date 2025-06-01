@@ -1,0 +1,274 @@
+
+//Sidebar Css Start Here
+.service-sidebar-area {
+    .widget-container{
+        border: 1px solid var(--st-border-1);
+        .widget-title{
+            padding: 28px 30px;
+        }
+        .service-list {
+            ul{
+                li{
+                    padding: 18px 30px;
+                    border-top: 1px solid var(--st-border-1);
+                    font-weight: var(--st-fw-bold);
+                    color: var(--st-heading-primary);
+                    font-family: var(--st-ff-menu);
+                    @include transition (.3s);
+                    background: transparent;
+                    &:hover{
+                        background: var(--st-theme-primary);
+                    }
+                    &:hover a{   
+                        color: var(--st-common-white);
+                    }
+                    &:hover path{
+                        fill: var(--st-common-white);
+                    }
+                }
+                a {
+                    display: flex;
+                    gap: 12px;
+                    align-items: center;
+                }
+                path {
+                    fill: var(--st-common-black);
+                }
+            }
+        }
+    }
+}
+
+.blog-sidebar {
+    .widget_search {
+        .search-form {
+            display: flex;
+            overflow: hidden;
+          }
+          .search-form input {
+            flex: 1;
+            padding: 21px 10px 21px 24px;
+            border: none;
+            color: var(--st-text-body);
+            font-size: var(--st-fz-p2);
+            line-height: var(--st-lh-p2);
+            outline: none;
+            border-top: 1px solid var(--st-grey-2);
+            border-bottom: 1px solid var(--st-grey-2);
+            border-left: 1px solid var(--st-grey-2);
+            height: 52px;
+            width: 100%;
+            &::placeholder {
+                color: var(--st-text-body);
+                font-size: var(--st-fz-p2);
+                line-height: var(--st-lh-p2);
+            }
+          }
+          .search-form button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--st-theme-primary);
+            border: none;
+            cursor: pointer;
+            color: var(--st-common-white);
+            font-size: 24px;
+            line-height: 28px;
+            padding: 14px;
+        }
+    }
+
+    .widget_popular_posts {
+        ul {
+            display: flex;
+            flex-direction: column;
+            li {
+                display: flex;
+                flex-direction: row;
+                gap: 16px;
+                justify-content: flex-start;
+                align-items: center;
+                border-bottom: 1px solid var(--st-grey-2);
+                &:last-child {
+                    border: none;
+                }
+                .image-wrapper {
+                    margin: 0;
+                    padding: 0;
+                    max-width: 80px;
+                    width: 100%;
+                    max-height: 80px;
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        aspect-ratio: 1/1;
+                    }
+                }
+                .content-wrapper {
+                    max-width: calc(100% - 86px);
+                    width: 100%;
+                    h6 {
+                        margin: 0 0 2px 0;
+                        font-size: var(--st-fz-p);
+                        line-height: var(--st-lh-p);
+                        transition: all .3s ease-in-out;
+                    }
+                    a {
+                        color: var(--st-text-body);
+                        font-size: var(--st-fz-p);
+                        line-height: var(--st-lh-p);
+                        font-family: var(--st-ff-p);
+                        transition: all .3s ease-in-out;
+                    }
+                }
+                @media #{ $lg } {
+                    flex-direction: column;
+                    gap: 16px;
+                    .image-wrapper {
+                        max-width: unset;
+                        width: 100%;
+                        max-height: unset;
+                        img {
+                            width: 100%;
+                            height: 100px;
+                            object-fit: cover;
+                            aspect-ratio: 1/1;
+                        }
+                    }
+                    .content-wrapper {
+                        max-width: unset;
+                        width: 100%;
+                    }
+                }
+                @media( max-width: 445px ) {
+                    flex-direction: column;
+                    gap: 16px;
+                    .image-wrapper  {
+                        max-width: unset;
+                        width: 100%;
+                        max-height: unset;
+                        img {
+                            width: 100%;
+                            height: 100px;
+                            object-fit: cover;
+                            aspect-ratio: 1/1;
+                        }
+                    }
+                    .content-wrapper {
+                        max-width: unset;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .widget_categories {
+        ul {
+            li {
+                border-bottom: 1px solid var(--st-grey-2);
+                &:last-child {
+                    border: none;
+                }
+            }
+            li a {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                p {
+                    margin: 0;
+                    font-weight: var(--st-fw-bold);
+                    font-family: var(--st-ff-heading);
+                    color: var(--st-heading-primary);
+                    transition: all .3s ease-in-out;
+                }
+                span {
+                    font-size: var(--st-fz-p2);
+                    line-height: var(--st-lh-p)2;
+                    color: var(--st-text-body);
+                    font-weight: var(--st-fw-normal);
+                }
+                svg path:first-child {
+                    fill: var(--st-text-body);
+                    transition: all .3s ease-in-out;
+                }
+                svg path:last-child {
+                    stroke: var(--st-text-body);
+                    transition: all .3s ease-in-out;
+                }
+            }
+            li:hover {
+                p {
+                    color: var(--st-theme-primary);
+                }
+                svg path:first-child {
+                    fill: var(--st-theme-primary);
+                }
+                svg path:last-child {
+                    stroke: var(--st-theme-primary);
+                }
+            }
+        }
+    }
+
+    .widget_tag_cloud {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 12px;
+            row-gap: 12px;
+            li {
+                padding: 12px 24px;
+                border: 1px solid var(--st-grey-2);
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+                a {
+                    font-size: var(--st-fz-p);
+                    line-height: var(--st-lh-p);
+                    color: var(--st-text-body);
+                    font-weight: var(--st-fw-bold);
+                    font-family: var(--st-ff-heading);
+                    transition: all .3s ease-in-out;
+                }
+                &:hover {
+                    background: var(--st-theme-primary);
+                    a {
+                        color: var(--st-common-white);
+                    }
+                }
+            }
+        }
+    }
+}
+//CTA Sidebar
+
+.cta-sidebar{
+    border: 1px solid var(--st-border-1);
+    padding: 40px 60px;
+    @media #{$xs}{
+        padding: 30px;
+    }
+    .cta-title {
+        h6{
+            span{
+                display: block;
+                 @media #{$lg}{
+                    display: inline;
+                }
+            }
+        }
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .sidebar-img {
+        max-width: 270px;
+        width: 100%;
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
