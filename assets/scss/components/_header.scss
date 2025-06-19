@@ -16,7 +16,6 @@
             margin-right: 25px;
             color: var(--st-heading-primary);
             font-weight: var(--st-fw-regular);
-
             @media #{$lg,$md,$sm,$xs} {
                 font-size: var(--st-fz-p2);
             }
@@ -24,11 +23,23 @@
             @media #{$xs} {
                 display: block;
             }
+            a{
+                @include transition (.3s);
+            }
+            &:hover a{
+                color: var(--st-theme-primary);
+            }
         }
 
         .mail-info {
             display: inline;
             color: var(--st-heading-primary);
+                        a{
+                @include transition (.3s);
+            }
+            &:hover a{
+                color: var(--st-theme-primary);
+            }
         }
 
         @media #{$lg,$md,$sm,$xs} {
@@ -179,12 +190,18 @@
                     font-size: var(--st-fz-p2);
                 }
             }
-
             b {
                 font-family: var(--st-ff-menu);
                 font-weight: var(--st-fw-bold);
                 @media #{$xss} {
                     font-size: var(--st-fz-p2);
+                }
+                @include transition (0.3s);
+                
+            }
+            &:hover {
+                b {
+                    color: var(--st-theme-primary);
                 }
             }
         }

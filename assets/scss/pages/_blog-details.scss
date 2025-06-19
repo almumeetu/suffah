@@ -1,10 +1,4 @@
 .blog-details-page-content {
-    .blog-details-content {
-        padding-right: 24px;
-        @media #{ $lg, $md, $sm, $xs } {
-            padding-right: 0;
-        }
-    }
     .feature-image-area {
         .feature-image-wrapper {
             img {
@@ -133,6 +127,9 @@
                     border: 1px solid var(--st-grey-2);
                     cursor: pointer;
                     transition: all .3s ease-in-out;
+                    @media #{$xs} {
+                        padding: 8px 16px;
+                    }
                     a {
                         font-size: var(--st-fz-p);
                         line-height: 24px;
@@ -148,58 +145,6 @@
                         }
                     }
                 }
-            }
-        }
-        .blog-social-share {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            gap: 12px;
-            @media #{ $lg, $sm, $xs } {
-                justify-content: flex-start;
-            }
-            p {
-                display: inline-block;
-                color: var(--st-heading-primary);
-            }
-            ul {
-                display: inline-flex;
-                justify-content: flex-start;
-                align-items: center;
-                li {
-                    position: relative;
-                    padding-right: 12px;
-                    margin-right: 12px; 
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        right: 0;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        width: 1px;
-                        height: 16px;
-                        background: var(--st-border-1);
-                    }
-                    i {
-                        font-size: 24px;
-                        line-height: 30px;
-                        color: var(--st-heading-primary);
-                        transition: all 0.3s ease-in-out;
-                    }
-                    &:hover {
-                        i {
-                            color: var(--st-theme-primary);
-                        }
-                    }
-                    &:last-child {
-                        padding-right: 0;
-                        margin-right: 0;
-                        &::after {
-                            display: none;
-                        }
-                    }
-                }
-                
             }
         }
     }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,28 +7,37 @@
     <meta name="description"
         content="Suffah is a professional HTML template for madrasa-cadet institutions offering Islamic and modern education under one system.">
     <title>Service - Islamic & Academic Education HTML Template</title>
+
+    <!-- Place favicon.ico in the root directory -->
     <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+
+    <!-- CSS here -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/swiper.min.css">
     <link rel="stylesheet" href="/assets/css/remixicon.css">
     <link rel="stylesheet" href="/assets/css/simple-lightbox.min.css">
     <link rel="stylesheet" href="/assets/scss/main.css">
-    
 </head>
 
 
 <body>
-    <!--Back to top-->
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+
+    <!--Back to top Start-->
     <div>
         <a href="#" class="back-to-top" aria-label="Back to Top">
             <i class="ri-arrow-up-line"></i>
         </a>
     </div>
+    <!--Back to top End-->
 
-
-    <!-- Custom Cursor -->
+    <!-- Custom Cursor Start -->
     <div class="custom-cursor"></div>
     <div class="custom-cursor-follower"></div>
+    <!-- Custom Cursor End -->
 
     <!-- Preloader Start -->
     <div id="preloader">
@@ -48,8 +57,9 @@
             </svg>
         </div>
     </div>
+    <!-- Preloader End -->
 
-    <!-- Offcanvas area -->
+    <!-- Offcanvas area Start-->
     <div class="offcanvas-area">
         <div class="offcanvas-wrapper">
             <div class="offcanvas-top d-flex align-items-center justify-content-between">
@@ -216,14 +226,16 @@
             </div>
         </div>
     </div>
-    <!--  -->
-    <div class="body-overlay"></div>
+    <!-- Offcanvas area End-->
 
+    <!-- Body overlay Start-->
+    <div class="body-overlay"></div>
+    <!-- Body overlay End-->
 
     <!-- Header Area Start Here -->
     <header>
 
-        <!-- Header Top -->
+        <!-- Header Top Start-->
         <div class="header-top-area">
             <div class="container container-menu-v1">
                 <div class="row align-items-center">
@@ -236,7 +248,7 @@
                                </a>
                             </div>
                             <div class="mail-info">
-                              <a href="#">
+                            <a href="mailto:info@novotheme.com">
                                   <i class="ri-mail-line"></i>
                                 <span>info@novotheme.com</span>
                               </a>
@@ -259,8 +271,9 @@
                 </div>
             </div>
         </div>
+        <!-- Header Top End-->
 
-        <!-- Header Main -->
+        <!-- Header Main Start-->
         <div class="header-main-area sticky-header">
             <div class="container container-menu-v1">
                 <div class="row align-items-center">
@@ -447,7 +460,7 @@
                     <!--Search Overlay -->
                     <div class="search-overlay">
                         <div class="search-form-box">
-                            <button class="close-search">&times;</button>
+                             <button class="close-search"><i class="ri-close-line"></i></button>
                             <form>
                                 <input type="text" placeholder="Search here..." name="search">
                                 <button class="primary-btn" type="submit"><i class="ri-search-line"></i></button>
@@ -458,6 +471,8 @@
                 </div>
             </div>
         </div>
+        <!-- Header Main End-->
+         
     </header>
     <!-- Header Area End Here -->
 
@@ -492,36 +507,39 @@
                     <div class="row align-items-center g-4">
                         <div class="col-xl-4 col-lg-4 col-md-6 col-12">
                             <div class="service-box"
-                                style="background-image: url('/assets/img/bg-img/servicebox-bg.png');">
-                                <div class="service-icon">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_1351_86895)">
-                                            <path
-                                                d="M2.4248 42.9452C1.99336 42.8292 1.56058 42.7131 1.12914 42.5956C0.354414 42.3856 0.171419 42.0498 0.383801 41.2234C1.30679 37.6483 2.22978 34.0746 3.15545 30.4996C5.3367 22.0712 7.51928 13.6442 9.6992 5.21575C9.98238 4.12265 10.2135 3.97754 11.2567 4.26775C13.3444 4.84816 15.4308 5.42857 17.5172 6.00898C17.8018 5.02367 17.8792 4.96562 18.877 4.96562C21.0917 4.96562 23.3076 4.96562 25.5984 4.96562C25.5984 4.78045 25.5984 4.616 25.5984 4.45293C25.5984 3.29763 25.5944 2.14234 25.5998 0.988426C25.6038 0.308516 25.891 0.00449128 26.5428 0.00310935C29.6417 -0.00103645 32.7406 -0.00103645 35.8408 0.00310935C36.4967 0.00310935 36.7825 0.305752 36.7959 0.978753C36.7999 1.18328 36.7959 1.3878 36.7959 1.65728C37.0042 1.65728 37.1806 1.65728 37.3582 1.65728C39.9736 1.65728 42.5903 1.65728 45.2056 1.65728C46.1834 1.65728 46.3944 1.87977 46.3944 2.91069C46.3944 16.0473 46.3944 29.1826 46.3944 42.3192V43.0364C46.6803 43.0364 46.9261 43.0254 47.1692 43.0392C47.6714 43.0669 47.98 43.3695 47.988 43.8891C48.004 44.9753 48.004 46.0615 47.988 47.1477C47.98 47.6673 47.6701 47.9658 47.1678 47.9976C47.0356 48.0059 46.902 48.0003 46.7685 48.0003C31.5892 48.0003 16.4099 48.0003 1.22932 48.0003C0.206148 48.0003 0.00178098 47.7903 0.00178098 46.7359C0.00178098 45.839 -0.00222622 44.9435 0.00178098 44.0466C0.00578817 43.3349 0.287628 43.0447 0.972859 43.0364C1.45506 43.0309 1.93726 43.0364 2.41946 43.0364C2.41946 43.0074 2.42079 42.9784 2.42213 42.9494L2.4248 42.9452ZM44.7622 37.2144V9.1432H36.8226V37.2144H44.7622ZM2.05881 41.1266C4.14656 41.7084 6.16485 42.2722 8.2339 42.8485C11.274 31.1076 14.3048 19.4054 17.3449 7.66868C15.2505 7.08965 13.2202 6.52721 11.1618 5.95785C8.12037 17.7112 5.0976 29.3885 2.06014 41.1266H2.05881ZM35.1623 38.0435V6.66264H27.2253V38.0435H35.1623ZM25.565 33.0783V13.2821H19.2256V33.0783H25.565ZM17.5653 43.0185V13.43C17.548 13.4286 17.5293 13.4272 17.5119 13.4258C14.9607 23.2776 12.4081 33.1294 9.84613 43.0199H17.5653V43.0185ZM46.3744 44.7238H1.62737V46.3144H46.3744V44.7238ZM36.8199 7.41164H44.7555V3.33633H36.8199V7.41164ZM36.8333 38.9169V42.9908H44.7689V38.9169H36.8333ZM19.2216 11.5602H25.5704V6.65573H19.2216V11.5602ZM19.223 42.9964H25.5597V38.0947H19.223V42.9964ZM27.2227 4.92969H35.1583V1.68216H27.2227V4.93108V4.92969ZM27.2387 39.7419V43.0074H35.1676V39.7419H27.2387ZM25.5757 34.7918H19.2403V36.3852H25.5757V34.7918Z"
-                                                fill="#111111" />
-                                            <path
-                                                d="M8.20036 33.4125C7.67541 33.266 7.19989 33.132 6.65625 32.98C8.31389 26.5816 9.96486 20.2151 11.6252 13.8057C12.1528 13.9508 12.6296 14.0821 13.1693 14.2299C11.5076 20.6407 9.858 27.0114 8.19902 33.4125H8.20036Z"
-                                                fill="#111111" />
-                                            <path
-                                                d="M5.20837 38.5771C5.49021 37.4937 5.75869 36.4586 6.03518 35.3945C6.55211 35.5355 7.02897 35.6668 7.57261 35.8146C7.29612 36.8856 7.02763 37.9318 6.74847 39.0124C6.21417 38.8618 5.7253 38.7236 5.20703 38.5771H5.20837Z"
-                                                fill="#111111" />
-                                            <path
-                                                d="M12.2539 11.3945C12.4623 10.5833 12.66 9.81217 12.8683 9.00098C13.4 9.15161 13.8902 9.29118 14.4111 9.43905C14.1987 10.2502 13.9957 11.0227 13.786 11.8229C13.2597 11.6764 12.7855 11.5437 12.2539 11.3959V11.3945Z"
-                                                fill="#111111" />
-                                            <path
-                                                d="M28.7969 22.2922C28.7969 18.5513 28.7969 14.8104 28.7969 11.0695C28.7969 10.1878 29.044 9.93357 29.8962 9.93219C30.8125 9.9308 31.7288 9.92666 32.6451 9.93357C33.2983 9.9391 33.5935 10.239 33.5935 10.9147C33.5962 18.5347 33.5962 26.1547 33.5935 33.7746C33.5935 34.4504 33.297 34.7517 32.6451 34.7572C31.6954 34.7641 30.7457 34.7627 29.796 34.7572C29.0787 34.7544 28.7982 34.4656 28.7982 33.7235C28.7955 29.9135 28.7982 26.1035 28.7982 22.2936L28.7969 22.2922ZM31.9626 33.0768V11.6278H30.4225V33.0782H31.9626V33.0768Z"
-                                                fill="#111111" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_1351_86895">
-                                                <rect width="48" height="48" fill="white" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
+                                    >
+                                    <div class="service-icon-bg">
+                                    <div class="service-icon">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1351_86895)">
+                                                <path
+                                                    d="M2.4248 42.9452C1.99336 42.8292 1.56058 42.7131 1.12914 42.5956C0.354414 42.3856 0.171419 42.0498 0.383801 41.2234C1.30679 37.6483 2.22978 34.0746 3.15545 30.4996C5.3367 22.0712 7.51928 13.6442 9.6992 5.21575C9.98238 4.12265 10.2135 3.97754 11.2567 4.26775C13.3444 4.84816 15.4308 5.42857 17.5172 6.00898C17.8018 5.02367 17.8792 4.96562 18.877 4.96562C21.0917 4.96562 23.3076 4.96562 25.5984 4.96562C25.5984 4.78045 25.5984 4.616 25.5984 4.45293C25.5984 3.29763 25.5944 2.14234 25.5998 0.988426C25.6038 0.308516 25.891 0.00449128 26.5428 0.00310935C29.6417 -0.00103645 32.7406 -0.00103645 35.8408 0.00310935C36.4967 0.00310935 36.7825 0.305752 36.7959 0.978753C36.7999 1.18328 36.7959 1.3878 36.7959 1.65728C37.0042 1.65728 37.1806 1.65728 37.3582 1.65728C39.9736 1.65728 42.5903 1.65728 45.2056 1.65728C46.1834 1.65728 46.3944 1.87977 46.3944 2.91069C46.3944 16.0473 46.3944 29.1826 46.3944 42.3192V43.0364C46.6803 43.0364 46.9261 43.0254 47.1692 43.0392C47.6714 43.0669 47.98 43.3695 47.988 43.8891C48.004 44.9753 48.004 46.0615 47.988 47.1477C47.98 47.6673 47.6701 47.9658 47.1678 47.9976C47.0356 48.0059 46.902 48.0003 46.7685 48.0003C31.5892 48.0003 16.4099 48.0003 1.22932 48.0003C0.206148 48.0003 0.00178098 47.7903 0.00178098 46.7359C0.00178098 45.839 -0.00222622 44.9435 0.00178098 44.0466C0.00578817 43.3349 0.287628 43.0447 0.972859 43.0364C1.45506 43.0309 1.93726 43.0364 2.41946 43.0364C2.41946 43.0074 2.42079 42.9784 2.42213 42.9494L2.4248 42.9452ZM44.7622 37.2144V9.1432H36.8226V37.2144H44.7622ZM2.05881 41.1266C4.14656 41.7084 6.16485 42.2722 8.2339 42.8485C11.274 31.1076 14.3048 19.4054 17.3449 7.66868C15.2505 7.08965 13.2202 6.52721 11.1618 5.95785C8.12037 17.7112 5.0976 29.3885 2.06014 41.1266H2.05881ZM35.1623 38.0435V6.66264H27.2253V38.0435H35.1623ZM25.565 33.0783V13.2821H19.2256V33.0783H25.565ZM17.5653 43.0185V13.43C17.548 13.4286 17.5293 13.4272 17.5119 13.4258C14.9607 23.2776 12.4081 33.1294 9.84613 43.0199H17.5653V43.0185ZM46.3744 44.7238H1.62737V46.3144H46.3744V44.7238ZM36.8199 7.41164H44.7555V3.33633H36.8199V7.41164ZM36.8333 38.9169V42.9908H44.7689V38.9169H36.8333ZM19.2216 11.5602H25.5704V6.65573H19.2216V11.5602ZM19.223 42.9964H25.5597V38.0947H19.223V42.9964ZM27.2227 4.92969H35.1583V1.68216H27.2227V4.93108V4.92969ZM27.2387 39.7419V43.0074H35.1676V39.7419H27.2387ZM25.5757 34.7918H19.2403V36.3852H25.5757V34.7918Z"
+                                                    fill="#111111" />
+                                                <path
+                                                    d="M8.20036 33.4125C7.67541 33.266 7.19989 33.132 6.65625 32.98C8.31389 26.5816 9.96486 20.2151 11.6252 13.8057C12.1528 13.9508 12.6296 14.0821 13.1693 14.2299C11.5076 20.6407 9.858 27.0114 8.19902 33.4125H8.20036Z"
+                                                    fill="#111111" />
+                                                <path
+                                                    d="M5.20837 38.5771C5.49021 37.4937 5.75869 36.4586 6.03518 35.3945C6.55211 35.5355 7.02897 35.6668 7.57261 35.8146C7.29612 36.8856 7.02763 37.9318 6.74847 39.0124C6.21417 38.8618 5.7253 38.7236 5.20703 38.5771H5.20837Z"
+                                                    fill="#111111" />
+                                                <path
+                                                    d="M12.2539 11.3945C12.4623 10.5833 12.66 9.81217 12.8683 9.00098C13.4 9.15161 13.8902 9.29118 14.4111 9.43905C14.1987 10.2502 13.9957 11.0227 13.786 11.8229C13.2597 11.6764 12.7855 11.5437 12.2539 11.3959V11.3945Z"
+                                                    fill="#111111" />
+                                                <path
+                                                    d="M28.7969 22.2922C28.7969 18.5513 28.7969 14.8104 28.7969 11.0695C28.7969 10.1878 29.044 9.93357 29.8962 9.93219C30.8125 9.9308 31.7288 9.92666 32.6451 9.93357C33.2983 9.9391 33.5935 10.239 33.5935 10.9147C33.5962 18.5347 33.5962 26.1547 33.5935 33.7746C33.5935 34.4504 33.297 34.7517 32.6451 34.7572C31.6954 34.7641 30.7457 34.7627 29.796 34.7572C29.0787 34.7544 28.7982 34.4656 28.7982 33.7235C28.7955 29.9135 28.7982 26.1035 28.7982 22.2936L28.7969 22.2922ZM31.9626 33.0768V11.6278H30.4225V33.0782H31.9626V33.0768Z"
+                                                    fill="#111111" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1351_86895">
+                                                    <rect width="48" height="48" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
                                 </div>
-                                <div class="service-title pt-24">
-                                    <h5>Learn Islamic Books</h5>
+
+                                <div class="service-title">
+                                    <h5><a href="/service-details.html">Learn Islamic Books</a></h5>
                                 </div>
                                 <div class="service-text py-16">
                                     <p>Islamic educational institute serves as a centre of learning that
@@ -534,8 +552,9 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 col-12">
                             <div class="service-box"
-                                style="background-image: url('/assets/img/bg-img/servicebox-bg.png');">
-                                <div class="service-icon">
+                                >
+                                <div class="service-icon-bg">
+                                                                    <div class="service-icon">
                                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_1351_70267)">
@@ -565,8 +584,9 @@
                                         </defs>
                                     </svg>
                                 </div>
-                                <div class="service-title pt-24">
-                                    <h5>Online Quran Classes</h5>
+                                </div>
+                                <div class="service-title">
+                                    <h5><a href="/service-details.html">Online Quran Classes</a></h5>
                                 </div>
                                 <div class="service-text py-16">
                                     <p>Islamic educational institute serves as a centre of learning that
@@ -579,7 +599,8 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 col-12">
                             <div class="service-box"
-                                style="background-image: url('/assets/img/bg-img/servicebox-bg.png');">
+                                >
+                                <div class="service-icon-bg">
                                 <div class="service-icon">
                                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -598,8 +619,9 @@
                                     </svg>
 
                                 </div>
-                                <div class="service-title pt-24">
-                                    <h5>Quran Research</h5>
+                                </div>
+                                <div class="service-title">
+                                    <h5><a href="/service-details.html">Quran Research</a></h5>
                                 </div>
                                 <div class="service-text py-16">
                                     <p>Islamic educational institute serves as a centre of learning that
@@ -612,8 +634,9 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 col-12">
                             <div class="service-box"
-                                style="background-image: url('/assets/img/bg-img/servicebox-bg.png');">
-                                <div class="service-icon">
+                                >
+                            <div class="service-icon-bg">
+                                                                <div class="service-icon">
                                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_1351_86845)">
@@ -638,8 +661,9 @@
                                     </svg>
 
                                 </div>
-                                <div class="service-title pt-24">
-                                    <h5>Quran Translation</h5>
+                            </div>
+                                <div class="service-title">
+                                    <h5><a href="/service-details.html">Quran Translation</a></h5>
                                 </div>
                                 <div class="service-text py-16">
                                     <p>Islamic educational institute serves as a centre of learning that
@@ -652,8 +676,9 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 col-12">
                             <div class="service-box"
-                                style="background-image: url('/assets/img/bg-img/servicebox-bg.png');">
-                                <div class="service-icon">
+                                >
+                                <div class="service-icon-bg">
+                                                                    <div class="service-icon">
                                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -671,8 +696,9 @@
                                     </svg>
 
                                 </div>
-                                <div class="service-title pt-24">
-                                    <h5>Quran Course For Kids</h5>
+                                </div>
+                                <div class="service-title">
+                                    <h5><a href="/blog-details.html">Quran Course For Kids</a></h5>
                                 </div>
                                 <div class="service-text py-16">
                                     <p>Islamic educational institute serves as a centre of learning that
@@ -685,8 +711,9 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 col-12">
                             <div class="service-box"
-                                style="background-image: url('/assets/img/bg-img/servicebox-bg.png');">
-                                <div class="service-icon">
+                                >
+                                <div class="service-icon-bg">
+                                                                    <div class="service-icon">
                                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -722,8 +749,9 @@
                                     </svg>
 
                                 </div>
-                                <div class="service-title pt-24">
-                                    <h5>Quran With Tajwid</h5>
+                                </div>
+                                <div class="service-title">
+                                    <h5><a href="/blog-details.html">Quran With Tajwid</a></h5>
                                 </div>
                                 <div class="service-text py-16">
                                     <p>Islamic educational institute serves as a centre of learning that
@@ -767,7 +795,7 @@
                     style="background-image: url('/assets/img/bg-img/newsletter-bg.png');">
                     <div class="newsletter-main-wrapper">
                         <div class="row align-items-center g-0">
-                            <div class="col-xl-7 col-lg-7 col-md-12 col-12 p-0">
+                            <div class="col-xl-7 col-lg-7 col-md-12 col-12">
                                 <div class="newsletter-content-wrapper">
                                     <div class="newsletter-title">
                                         <h2>Subscribe To Our Newsletter </h2>
@@ -780,16 +808,18 @@
                                         <div class="subscribe-container">
                                             <input type="email" placeholder="E-mail Address" name="email"
                                                 autocomplete="email">
-                                            <a href="#" class="primary-btn">Subscribe</a>
+                                            <a href="#" class="primary-btn">Subscribe Now</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-5 col-lg-5 d-none d-xxl-block d-xl-block d-lg-block p-0">
                                 <div class="newsletter-image-wrapper p-relative">
-                                    <div class="newsletter-img text-center">
-                                        <img src="/assets/img/newsletter/newsletter-img.png" alt="news letter"
+                                    <div class="newsletter-img">
+                                                                               <div class="main-img-wrapper">
+                                            <img src="/assets/img/newsletter/main-image.png" alt="news letter"
                                             loading="lazy">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -842,8 +872,8 @@
                                                 <i class="ri-phone-line"></i>
                                             </div>
                                             <div class="f-content">
-                                                <a href="tel:+15854370978"><span>+1 585 437 0978</span>
-                                                    <span>+1 541 565 6545</span></a>
+                                                <a href="tel:+15854370978"><span>+1 585 437 0978</span></a>
+                                                <a href="tel:+15415656545"><span>+1 541 565 6545</span></a>
                                             </div>
                                         </div>
                                         <div class="f-location-wrapper">
@@ -851,8 +881,8 @@
                                                 <i class="ri-mail-line"></i>
                                             </div>
                                             <div class="f-content">
-                                                <a href="mailto:example@example.com"><span>example@example.com</span>
-                                                    <span>info@yoursite.com</span></a>
+                                                                                                <a href="mailto:example@example.com"><span>example@example.com</span></a>
+                                                <a href="mailto:einfo@yoursite.com"><span>info@yoursite.com</span></a>
                                             </div>
                                         </div>
 
@@ -925,7 +955,7 @@
                         </div>
                         <div class="hr"></div>
                         <div class="copyright-section text-center">
-                            <p>© Copyright 2025 NoboThemes. All Rights Reserved</p>
+                            <p>© Copyright 2025 Suffah. All Rights Reserved</p>
                         </div>
                     </div>
                 </div>
@@ -934,6 +964,8 @@
     </footer>
     <!-- Footer Area End Here-->
 
+
+    <!-- JS here -->
     <script src="/assets/js/simple-lightbox.min.js"></script>
     <script src="/assets/js/vendor/jquery3.7.1.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>

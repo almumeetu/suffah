@@ -104,6 +104,12 @@
                             line-height: 1;
                             padding-bottom: 8px;
                         }
+                        a {
+                            color: var(--st-text-body);
+                            &:hover {
+                               color: var(--st-theme-primary); 
+                            }
+                        }
                 }
             }
         }

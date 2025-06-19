@@ -12,6 +12,7 @@
   .breadcrumb {
     background: transparent;
     margin-bottom: 0;
+    align-items: center;
     .breadcrumb-item {
       color: var(--st-common-white);
       a {
@@ -19,25 +20,30 @@
         text-decoration: none;
         transition: color 0.3s;
         font-weight: var(--st-fw-bold);
+        font-family: var(--st-ff-heading);
         &:hover {
           color: var(--st-common-white);
         }
       }
-
       &::before {
+        padding-right: unset;
+        content: none;
+      }
+      &::after {
         color: var(--st-common-white);
         content: "›"; 
         font-size: 20px;
-        padding: 0 0.5rem;
+        padding: 0 10px 0 8px;
       }
 
       &.active {
         color: var(--st-theme-primary);
-         font-weight: var(--st-fw-bold);
+        font-weight: var(--st-fw-bold);
+        font-family: var(--st-ff-heading);
       }
     }
 
-    .breadcrumb-item:first-child::before {
+    .breadcrumb-item:last-child::after {
       display: none;
     }
   }

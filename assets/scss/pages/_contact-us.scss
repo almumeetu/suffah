@@ -61,6 +61,9 @@
             }
             a {
                 color: var(--st-text-body);
+                &:hover {
+                    color: var(--st-theme-primary);
+                }
             }
         }
         .infobox {
@@ -98,6 +101,12 @@
                 padding-bottom: 24px;
                 border-bottom: 1px solid var(--st-border-1);
             }
+        }
+        .area-details[open] .area-title i {
+            @include transition(0.3s);
+        }
+        .area-details[open] .area-title i {
+            transform: rotate(180deg);
         }
     }
     .contact-form {

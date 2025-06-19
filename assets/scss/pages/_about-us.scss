@@ -46,13 +46,26 @@
                                 color: var(--st-heading-primary);
                                 @include transition (.3s);
                                 display: block;
+                                position: relative; 
+                                &::after {
+                                    content: '';
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: -3px;
+                                    width: 0%;
+                                    height: 2px;
+                                    background-color: var(--st-theme-primary);
+                                    transition: width 0.3s ease;
+                                }
                             }
                             &:hover svg path{
                                 fill: var(--st-theme-primary);
                             }
                             &:hover span{
                                 color: var(--st-theme-primary);
-                                text-decoration: underline;
+                                &::after {
+                                    width: 100%;
+                                }
                             }
                         }
                     }

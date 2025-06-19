@@ -1,6 +1,9 @@
 .blog-page-content {
     .blog-grid {
         .blog-main-wrapper .blog-wrapper {
+            &:hover .blog-title h6{
+                color: var(--st-theme-primary);
+            }
             .blog-content {
                 padding: 32px;
                 .date-left {

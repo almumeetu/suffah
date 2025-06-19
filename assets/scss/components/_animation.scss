@@ -1,4 +1,19 @@
 /* Animation Keyframes */
+@keyframes waveMove {
+  0% {
+    d: path("M723.5 0C1125.5 0 1291.24 146.517 1654 146.517C1790.43 146.517 1919.87 77.2164 1920 77.1455V208.889H0V154.889C0 154.889 340.5 0 723.5 0Z");
+  }
+  50% {
+    d: path("M723.5 0C1125.5 30 1291.24 170 1654 150C1790.43 140 1919.87 100 1920 100V208.889H0V154.889C0 154.889 340.5 10 723.5 0Z");
+  }
+  100% {
+    d: path("M723.5 0C1125.5 0 1291.24 146.517 1654 146.517C1790.43 146.517 1919.87 77.2164 1920 77.1455V208.889H0V154.889C0 154.889 340.5 0 723.5 0Z");
+  }
+}
+
+.animate-wave path {
+  animation: waveMove 3s ease-in-out infinite;
+}
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -221,5 +236,12 @@
 }
 
 .hover-rotate:hover a img {
-  transform: rotateX(1.5deg) scale(1.05);
+  transform: rotateX(1.5deg) scale(1.1);
+}
+.hover-rotate img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.hover-rotate:hover img {
+  transform: rotateX(1.5deg) scale(1.1);
 }

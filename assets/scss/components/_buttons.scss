@@ -2,24 +2,29 @@
 .primary-btn {
   display: inline-block;
   @include transition(0.3s);
+
   &::before {
     @include transition(0.3s);
   }
 }
+
 .primary-btn-full {
   display: block;
   text-align: center;
   @include transition(0.7s);
+
   &::before {
     @include transition(0.7s);
   }
 }
-.white-primary-btn{
-   padding: 12px 32px;
-    border: 1px solid var(--st-border-1);
-   display: inline;
+
+.white-primary-btn {
+  padding: 12px 32px;
+  border: 1px solid var(--st-border-1);
+  display: inline;
 
 }
+
 .primary-btn,
 .primary-btn-full {
   padding: 12px 32px;
@@ -32,7 +37,7 @@
   font-family: var(--st-ff-menu);
   font-weight: var(--st-fw-bold);
   cursor: pointer;
-  
+
 
   &::before {
     content: '';
@@ -52,22 +57,25 @@
       width: 100%;
     }
   }
+
   @media #{$xs, $sm} {
     padding: 8px 15px;
     font-size: 14px;
     line-height: 18px;
- }
+  }
+
   @media #{$md, $lg} {
     padding: 10px 22px;
     font-size: 15px;
     line-height: 22px;
- }
+  }
 }
 
-.primary-btn-v2{
+.primary-btn-v2 {
   border-radius: 4px;
+
   &::before {
-    background: $bg-color;
+    border-radius: 4px;
   }
 }
 
@@ -82,6 +90,7 @@
   color: var(--st-theme-primary);
   text-decoration: none;
   transition: color 0.3s ease;
+  margin-bottom: 5px;
 }
 
 .readmore-btn::after {
@@ -89,7 +98,7 @@
   position: absolute;
   left: 0;
   bottom: -3px;
-  width: 100%;
+  width: 85%;
   height: 2px;
   background-color: var(--st-theme-primary);
   transition: width 0.3s ease;
@@ -100,5 +109,5 @@
 }
 
 .readmore-btn:hover::after {
-  width: 110%;
+  width: 100%;
 }

@@ -3,8 +3,8 @@
     width: 20px;
     height: 20px;
     border-radius: 0;
-    background: var(--st-common-body);
-    border: 4px solid var(--st-common-body);
+    background: $bg-color;
+    border: 4px solid $bg-color;
     opacity: 1;
 }
 
@@ -135,6 +135,9 @@
     opacity: 1;
     text-align: center;
     margin: 0 16px !important;
+    @media #{ $sm, $xs } {
+        margin: 0 8px !important;
+    }
 }
 
 .testimonial-pagination>.swiper-pagination-bullet.swiper-pagination-bullet-active {

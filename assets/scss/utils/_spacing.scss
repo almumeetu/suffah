@@ -4,7 +4,6 @@
 
 .pt-120 {
     padding-top: 120px;
-
     @media #{$md, $lg} {
         padding-top: 80px;
     }

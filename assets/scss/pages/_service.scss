@@ -1,5 +1,10 @@
 //Service details Css Start here
 .service-details{
+    .service-row {
+        @media #{$xs, $sm, $md}{
+            flex-direction: column-reverse;
+        }
+    }
     .service-details-content-wrapper{
         .service-details-img{
             img{

@@ -261,7 +261,14 @@
                 }
 
                 h6 {
-                    margin: 0;
+                    a {
+                        @include transition(0.3s);
+                    }
+                    &:hover {
+                        a {
+                            color: var(--st-theme-primary);
+                        }
+                    }
                 }
             }
         }

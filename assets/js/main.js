@@ -23,6 +23,7 @@
 20. Previous Event Swiper
 21. Custom Cursor
 22. Animate Js
+23. Form Massage distination js
 ****************************************************/
 
 (function ($) {
@@ -39,6 +40,8 @@
       preloader.style.display = "none";
     }, 800);
   });
+
+
 
   ////////////////////////////////////////////////////
   // 21. Custom Cursor JS
@@ -77,6 +80,43 @@
     setTimeout(function () {
       $item.addClass('show');
     }, index * 400); // 400ms delay between each
+  });
+
+  ////////////////////////////////////////////////////
+  // 22. Gallery Load More Button JS
+  function initLoadMore(config) {
+    const $items = $(config.itemSelector);
+    const $button = $(config.buttonSelector);
+    const initialCount = config.initialVisible || 9;
+    const loadCount = config.itemsPerClick || 3;
+
+    $items.each(function(index) {
+      if (index >= initialCount) {
+        $(this).hide();
+      }
+    });
+
+    if ($items.length <= initialCount) {
+      $button.hide();
+    }
+
+    let currentVisible = initialCount;
+
+    $button.on('click', function() {
+      $items.slice(currentVisible, currentVisible + loadCount).slideDown();
+      currentVisible += loadCount;
+
+      if (currentVisible >= $items.length) {
+        $button.hide();
+      }
+    });
+  }
+
+  initLoadMore({
+    itemSelector: '.portfolio-section .portfolio-item',
+    buttonSelector: '#loadMoreBtn',
+    initialVisible: 9,
+    itemsPerClick: 3
   });
 
   // 02. Mobile Menu Js
@@ -123,47 +163,53 @@
   });
 
   ////////////////////////////////////////////////////
-  // 03. Off-canvas Menu Js
-  // offcanvas
-  $(".offcanvas-open-btn").on("click", function () {
-    $(".offcanvas-area").addClass("opened");
-    $(".body-overlay").addClass("opened");
-  });
-  $(".offcanvas-close-btn").on("click", function () {
-    $(".offcanvas-area").removeClass("opened");
-    $(".body-overlay").removeClass("opened");
+  // 23. From Massage Js
+  $('#contactForm').submit(function (e) {
+      e.preventDefault(); 
+
+      const formData = $(this).serialize(); 
+
+      $.ajax({
+        type: 'POST',
+        url: 'mail.php', 
+        data: formData,
+        success: function (response) {
+          $('#formMessage').removeClass('error').addClass('success').html(response); 
+          $('#contactForm')[0].reset(); 
+        },
+        error: function () {
+          $('#formMessage').removeClass('success').addClass('error').html('Something went wrong. Please try again.');
+        }
+      });
   });
 
-  // // Body overlay Js
-  $(".body-overlay").on("click", function () {
-    $(".offcanvas-area").removeClass("opened");
-    $(".body-overlay").removeClass("opened");
-  });
 
+  
   ////////////////////////////////////////////////////
   // 04. Search Overlay Js
-  function initializeSearchOverlay() {
-    const searchIcon = $(".search-icon");
-    const searchOverlay = $(".search-overlay");
-    const closeSearch = $(".close-search");
+function initializeSearchOverlay() {
+  const searchIcon = $(".search-icon");
+  const searchOverlay = $(".search-overlay");
+  const closeSearch = $(".close-search");
 
-    searchIcon.on("click", function (e) {
-      e.preventDefault();
-      searchOverlay.css("display", "flex");
-    });
+  searchIcon.on("click", function (e) {
+    e.preventDefault();
+    searchOverlay.addClass("active");
+  });
 
-    closeSearch.on("click", function (e) {
-      e.preventDefault();
-      searchOverlay.css("display", "none");
-    });
+  closeSearch.on("click", function (e) {
+    e.preventDefault();
+    searchOverlay.removeClass("active");
+  });
 
-    $(window).on("click", function (event) {
-      if ($(event.target).is(searchOverlay)) {
-        searchOverlay.css("display", "none");
-      }
-    });
-  }
-  initializeSearchOverlay();
+  $(window).on("click", function (event) {
+    if ($(event.target).is(searchOverlay)) {
+      searchOverlay.removeClass("active");
+    }
+  });
+}
+initializeSearchOverlay();
+
 
   ////////////////////////////////////////////////////
   // 05. Header Sticky Js
@@ -410,7 +456,7 @@
   // 15. Service Swiper Js
   const serviceSwiper = new Swiper(".serviceSwiper", {
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 0, 
     loop: true,
     autoplay: {
       delay: 3000,
@@ -421,11 +467,17 @@
       clickable: true,
     },
     breakpoints: {
-      640: {
+      575: {
         slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
       },
       1024: {
         slidesPerView: 3,
+        spaceBetween: 20,
       },
     },
   });
@@ -618,6 +670,8 @@
   setTimeout(showNextNotification, 5000);
 
 
+  //No-js JS
+  $("html").removeClass("no-js").addClass("js");
 
 })(jQuery);
 
