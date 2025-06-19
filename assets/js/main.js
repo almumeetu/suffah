@@ -161,6 +161,25 @@
       submenu.slideUp(300);
     }
   });
+  
+  ////////////////////////////////////////////////////
+  // 03. Off-canvas Menu Js
+  // offcanvas
+  $(".offcanvas-open-btn").on("click", function () {
+    $(".offcanvas-area").addClass("opened");
+    $(".body-overlay").addClass("opened");
+  });
+  $(".offcanvas-close-btn").on("click", function () {
+    $(".offcanvas-area").removeClass("opened");
+    $(".body-overlay").removeClass("opened");
+  });
+
+  // // Body overlay Js
+  $(".body-overlay").on("click", function () {
+    $(".offcanvas-area").removeClass("opened");
+    $(".body-overlay").removeClass("opened");
+  });
+
 
   ////////////////////////////////////////////////////
   // 23. From Massage Js
