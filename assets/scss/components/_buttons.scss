@@ -1,4 +1,11 @@
-// Primary Button 
+/*----------------------------------------*/
+/*  28. BUTTON CSS START
+/*----------------------------------------*/
+
+
+
+//Primary BTN
+
 .primary-btn {
   display: inline-block;
   @include transition(0.3s);
@@ -71,13 +78,7 @@
   }
 }
 
-.primary-btn-v2 {
-  border-radius: 4px;
 
-  &::before {
-    border-radius: 4px;
-  }
-}
 
 .readmore-btn {
   position: relative;
@@ -87,7 +88,7 @@
   font-weight: var(--st-fw-bold);
   cursor: pointer;
   @include transition(0.3s);
-  color: var(--st-theme-primary);
+  color: var(--st-common-black);
   text-decoration: none;
   transition: color 0.3s ease;
   margin-bottom: 5px;
@@ -100,7 +101,7 @@
   bottom: -3px;
   width: 85%;
   height: 2px;
-  background-color: var(--st-theme-primary);
+  background-color: var(--st-common-black);
   transition: width 0.3s ease;
 }
 
@@ -110,4 +111,9 @@
 
 .readmore-btn:hover::after {
   width: 100%;
+  background-color: var(--st-theme-primary);
 }
+
+/*----------------------------------------*/
+/*  28. BUTTON CSS END
+/*----------------------------------------*/

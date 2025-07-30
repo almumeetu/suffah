@@ -10,10 +10,10 @@
 */
 @font-face {
   font-family: "remixicon";
-  src: url("/assets/fonts/rimixicon/remixicon.eot");
-  src: url("/assets/fonts/rimixicon/remixicon.woff2") format("woff2"),
-       url("/assets/fonts/rimixicon/remixicon.woff") format("woff"),
-       url("/assets/fonts/rimixicon/remixicon.ttf") format("truetype");
+  src: url("../fonts/rimixicon/remixicon.eot");
+  src: url("../fonts/rimixicon/remixicon.woff2") format("woff2"),
+       url("../fonts/rimixicon/remixicon.woff") format("woff"),
+       url("../fonts/rimixicon/remixicon.ttf") format("truetype");
   font-display: swap;
 }
 

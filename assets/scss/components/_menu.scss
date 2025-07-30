@@ -1,4 +1,9 @@
-// Header Main & Menu Css Start Here
+/*----------------------------------------*/
+/*  24. MENU CSS START
+/*----------------------------------------*/
+
+
+
 .main-menu {
     text-align: left;
 
@@ -376,9 +381,18 @@
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%, -50%);
+                        max-width: 80px;
+                        height: auto;
+                        width: 100%;
                         @media #{$md,$sm,$xs,$lg} {
                            position: unset;
                            transform: unset;
+                        }
+                        img{
+                            width: 100%;
+                             @media #{$xs} {
+                                width: unset;
+                             }
                         }
                         svg {
                             width: 70px;
@@ -406,9 +420,8 @@
             aspect-ratio: 1 / 1;
             object-fit: contain;
 
-            @media #{$md,$sm,$xs,$lg} {
-                max-width: 75px;
-                width: 100%;
+            @media #{$md,$sm,$xs} {
+                max-width: 70px !important;
             }
         }
 
@@ -551,5 +564,8 @@
     }
 }
 
+/*----------------------------------------*/
+/*  24. MENU CSS END
+/*----------------------------------------*/
 
 

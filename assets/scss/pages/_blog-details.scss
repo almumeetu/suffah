@@ -1,3 +1,8 @@
+/*----------------------------------------*/
+/*  15. BLOG DETAILS CSS START
+/*----------------------------------------*/
+
+
 .blog-details-page-content {
     .feature-image-area {
         .feature-image-wrapper {
@@ -74,7 +79,7 @@
                     content: '';
                     position: absolute;
                     left: 0;
-                    background: url('/assets/img/blog/blog-details/list-style-icon.svg');
+                    background: url('../img/blog/blog-details/list-style-icon.svg');
                     background-repeat: no-repeat;
                     width: 24px;
                     height: 24px;
@@ -91,7 +96,7 @@
                 top: 50%;
                 transform: translateY(-50%);
                 content: '';
-                background: url('/assets/img/blog/blog-details/quote-icon.svg');
+                background: url('../img/blog/blog-details/quote-icon.svg');
                 width: 80px;
                 height: 80px;
             }
@@ -264,3 +269,7 @@
         }
     }
 }
+
+/*----------------------------------------*/
+/*  15. BLOG DETAILS CSS END
+/*----------------------------------------*/

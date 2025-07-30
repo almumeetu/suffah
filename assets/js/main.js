@@ -32,14 +32,16 @@
   ////////////////////////////////////////////////////
   // 01. PreLoader Js
   // Remove preloader on page load
-  window.addEventListener("load", function () {
-    const preloader = document.getElementById("preloader");
-    preloader.style.opacity = "0";
-    preloader.style.transition = "opacity 0.8s ease";
-    setTimeout(() => {
-      preloader.style.display = "none";
-    }, 800);
+  $(window).on("load", function () {
+  $("#preloader").css({
+    opacity: "0",
+    transition: "opacity 0.8s ease"
   });
+  setTimeout(() => {
+    $("#preloader").css("display", "none");
+  }, 800);
+ });
+
 
 
 
@@ -161,25 +163,6 @@
       submenu.slideUp(300);
     }
   });
-  
-  ////////////////////////////////////////////////////
-  // 03. Off-canvas Menu Js
-  // offcanvas
-  $(".offcanvas-open-btn").on("click", function () {
-    $(".offcanvas-area").addClass("opened");
-    $(".body-overlay").addClass("opened");
-  });
-  $(".offcanvas-close-btn").on("click", function () {
-    $(".offcanvas-area").removeClass("opened");
-    $(".body-overlay").removeClass("opened");
-  });
-
-  // // Body overlay Js
-  $(".body-overlay").on("click", function () {
-    $(".offcanvas-area").removeClass("opened");
-    $(".body-overlay").removeClass("opened");
-  });
-
 
   ////////////////////////////////////////////////////
   // 23. From Massage Js
@@ -202,8 +185,24 @@
       });
   });
 
+  ////////////////////////////////////////////////////
+  // 03. Off-canvas Menu Js
+  // offcanvas
+  $(".offcanvas-open-btn").on("click", function () {
+    $(".offcanvas-area").addClass("opened");
+    $(".body-overlay").addClass("opened");
+  });
+  $(".offcanvas-close-btn").on("click", function () {
+    $(".offcanvas-area").removeClass("opened");
+    $(".body-overlay").removeClass("opened");
+  });
 
-  
+  // // Body overlay Js
+  $(".body-overlay").on("click", function () {
+    $(".offcanvas-area").removeClass("opened");
+    $(".body-overlay").removeClass("opened");
+  });
+
   ////////////////////////////////////////////////////
   // 04. Search Overlay Js
 function initializeSearchOverlay() {
@@ -274,7 +273,7 @@ initializeSearchOverlay();
 
   ////////////////////////////////////////////////////
   // 08. Pagination Active Js
-  $('.custom-pagination .page-item').click(function (e) {
+  $('.custom-pagination').on('click', '.page-item', function (e) {
     e.preventDefault();
     $('.custom-pagination .page-item').removeClass('active');
     $(this).addClass('active');
@@ -376,7 +375,7 @@ initializeSearchOverlay();
   let steps = duration / interval;
 
   arr.forEach(function (item) {
-    let target = parseInt($(item).data('number'));
+    let target = parseInt($(item).data('number'), 10);
     let current = 0;
     let increment = target / steps;
 
@@ -434,7 +433,7 @@ initializeSearchOverlay();
     const name = $slide.data('name');
     const message = $slide.data('message');
     const position = $slide.data('position') || '';
-    const rating = parseInt($slide.data('rating')) || 0;
+    const rating = parseInt($slide.data('rating'), 10) || 0;
 
     clientText.addClass('fade-out');
     mainImage.addClass('fade-out');

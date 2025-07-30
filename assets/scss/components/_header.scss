@@ -1,4 +1,7 @@
-// Header Css Start Here
+/*----------------------------------------*/
+/*  25. HEADER CSS START
+/*----------------------------------------*/
+
 
 // Header Top Css Start Here
 .header-top-area {
@@ -75,6 +78,7 @@
 // Header-v2 Css Start Here
 .header-top-area-v2 {
     padding: 0;
+    background: $bg-color;
 
     .header-top-notification {
         position: relative;
@@ -103,6 +107,20 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        img{
+            @media #{$xl} {
+                max-width: 100px;
+               
+            }
+            @media #{$md,$lg} {
+                max-width: 90px;
+                
+            }
+            @media #{$xs, $sm} {
+                max-width: 78px;
+               
+            }
+        }
         @media #{$md,$sm,$xs,$lg} {
             justify-content: left;
             margin-top: 0;
@@ -158,7 +176,6 @@
             border: 1px solid var(--st-theme-primary);
             background: var(--st-theme-primary);
             margin-right: var(--st-fz-p2);
-            border-radius: 4px;
 
             @media #{$xss} {
                 margin-right: 7px;
@@ -213,3 +230,7 @@
         }
     }
 }
+
+/*----------------------------------------*/
+/*  25. HEADER CSS END
+/*----------------------------------------*/

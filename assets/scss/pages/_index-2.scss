@@ -1,3 +1,9 @@
+/*----------------------------------------*/
+/*  03. Index-2 CSS START
+/*----------------------------------------*/
+
+
+
 .banner-v2 {
     background: $bg-color;
     svg{
@@ -146,8 +152,6 @@
         justify-content: space-between;
         border-bottom: 4px solid var(--st-theme-primary);
         gap: 24px;
-        border-bottom-right-radius: 6px;
-        border-bottom-left-radius: 6px;
         background-repeat: no-repeat;
         @media #{$xs} {
             gap: 12px;
@@ -194,7 +198,6 @@
                 .inner-content {
                     background-size: cover;
                     background-color: var(--st-common-white);
-                    border-radius: 4px;
                     padding: 32px 24px 24px 24px;
                     display: flex;
                     flex-direction: column;
@@ -313,7 +316,6 @@
     .service-box-wrapper {
         .service-box {
             padding: 48px;
-            border-radius: 8px;
             position: relative;
             overflow: hidden;
 
@@ -326,7 +328,7 @@
             }
 
             &:hover .service-icon {
-                background: $bg-color;
+                background: var(--st-theme-primary);
             }
 
             &:hover .service-icon svg {
@@ -334,7 +336,7 @@
             }
 
             &:hover .service-icon svg path {
-                fill: var(--st-theme-primary);
+                fill: var(--st-common-white);
             }
 
             .service-title {
@@ -359,7 +361,7 @@
             .service-icon {
                 width: 80px;
                 height: 80px;
-                background: var(--st-theme-primary);
+                background: $bg-color;
                 border-top-right-radius: 40px;
                 border-top-left-radius: 40px;
                 display: flex;
@@ -383,7 +385,7 @@
                     }
 
                     path {
-                        fill: var(--st-common-white);
+                        fill: var(--st-common-black);
                     }
                 }
             }
@@ -572,13 +574,10 @@
     }
 }
 .notice-tab-v2 {
-    .tab-main-wrapper {
-        border-radius: 8px;
-    }
     .tab-btn-wrapper {
         ul {
             a {
-                border-radius: 4px;
+                border-radius: 0;
             }
         }
     }
@@ -758,11 +757,9 @@
                     }
 
                     .event-img {
-                        border-radius: 16px;
                         overflow: hidden;
                         img {
                             width: 100%;
-                            border-radius: 12px;
                             transition: transform 0.6s ease, filter 0.4s ease, box-shadow 0.4s ease;
                             will-change: transform, filter;
                             overflow: hidden;
@@ -802,7 +799,7 @@
 //Testimonial - v2 Css Start Here
 .testimonial-v2 {
     .testimonialv2Slider {
-        padding: 0 0 48px 0;
+        padding: 0 0 80px 0;
     }
 
     .testimonial-main-wrapper {
@@ -811,7 +808,6 @@
                 background: var(--st-common-white);
                 padding: min(48px, 8%);
                 padding-bottom: 0;
-                border-radius: 8px;
 
                 @media #{$sm,$md,$lg} {
                     padding: min(24px, 8%);
@@ -826,7 +822,7 @@
                 .icon-wrapper {
                     justify-content: space-between;
                     align-items: start;
-                    margin-bottom: 30px;
+                    margin-bottom: 24px;
 
                     .review-icon {
                         nav {
@@ -847,7 +843,7 @@
                 }
 
                 .parents-text {
-                    padding-bottom: 30px;
+                    padding-bottom: 24px;
 
                     p {
                         margin: 0;
@@ -906,7 +902,6 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05),
                 0 -4px 6px rgba(0, 0, 0, 0.05);
             overflow: hidden;
-            border-radius: 8px;
             &:hover {
                 .social-icons {
                     opacity: 1;
@@ -958,7 +953,6 @@
                     align-items: center;
                     font-size: 20px;
                     background-color: #fff;
-                    border-radius: 4px;
                     @include transition(0.3s);
                     color: var(--st-heading-primary);
                     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
@@ -1012,7 +1006,6 @@
             }
             img {
                 width: 100%;
-                border-radius: 8px;
             }
 
             .chosse-left-img {
@@ -1051,7 +1044,6 @@
                     width: 100%;
                     border: 1px solid var(--st-common-white);
                     padding: 12px 16px;
-                    border-radius: 4px;
 
                     .category-name {
                         h6 {
@@ -1161,7 +1153,6 @@
     .gallery-img {
         position: relative;
         display: block;
-        border-radius: 8px;
         overflow: hidden;
         height: 100%;
 
@@ -1170,7 +1161,6 @@
             height: 100%;
             display: block;
             transition: transform 0.5s ease-in-out;
-            border-radius: 8px;
             object-fit: cover;
 
             @media #{$xs} {
@@ -1190,7 +1180,6 @@
             justify-content: center;
             align-items: center;
             transition: opacity 0.3s ease;
-            border-radius: 8px;
 
             .icon {
                 svg {
@@ -1233,7 +1222,6 @@
         }
         .custom-box {
             overflow: hidden;
-            border-radius: 8px;
             @media #{$xs} {
                 width: 100%;
                 .img-200 {
@@ -1306,8 +1294,6 @@
                 border-width: 0 1px 1px 1px;
                 border-style: solid;
                 border-color: var(--st-border-1);
-                border-bottom-left-radius: 8px;
-                border-bottom-right-radius: 8px;
                 overflow: hidden;
                 @media #{$xs, $sm, $md, $lg} {
                      margin-top: 0;
@@ -1402,3 +1388,7 @@
         padding-left: 0;
     }
 }
+
+/*----------------------------------------*/
+/*  03. Index-2 CSS END
+/*----------------------------------------*/

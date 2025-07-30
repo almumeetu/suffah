@@ -1,30 +1,65 @@
 @import '../utils';
 
 /*-----------------------------------------------------------------------------------
-
-    Theme Name: suffah – HTML5 Template
-    Author: SOFTZINO
-    Support: info@softzino.com
-    Description: Template Name  – HTML5 Template
+    Theme Name: Talwah – HTML5 Template
+    Author: NoboThemes
+	Author URI: https://nobothemes.com
+    Support: support@nobothemes.com
+    Description: Talwah is a cutting-edge education HTML template tailored for institutions offering both Islamic and modern academic programs. Whether you're running a Cadet Madrasa, Islamic school, or modern religious institution, this template delivers a perfect balance between tradition and technology.
     Version: 1.0
+-----------------------------------------------------------------------------------*/
 
------------------------------------------------------------------------------------
-
-/************ TABLE OF CONTENTS ***************
-
-    01. THEME DEFAULT CSS
-    02. HEADER CSS
-
-
-
-**********************************************/
-
+/*----------------------------------------*/
+/* CSS TABLE OF CONTENTS
+/*----------------------------------------
+/*
+/*  01. THEME DEFAULT CSS START
+/*  02. INDEX CSS START
+/*  03. INDEX-2 CSS START
+/*  04. PROGRAM DETAILS CSS START
+/*  05. SERVICE CSS START
+/*  06. TEAM DETAILS CSS START
+/*  07. TESTIMONIAL CSS START
+/*  08. HOW TO APPLY CSS START
+/*  09. GALLERY CSS START
+/*  10. EVENT DETAILS CSS START
+/*  11. CONTACT-US CSS START
+/*  12. BOOOK GALLERY CSS START
+/*  13. BLOG CSS START
+/*  14. BLOG LIST CSS START
+/*  15. BLOG DETAILS CSS START
+/*  16. APPLICATION NOTICE CSS START
+/*  17. APPLICATION FORM CSS START
+/*  18. ABOUT US CSS START
+/*  19. 404 PAGE CSS START
+/*  20. SOCIAL SHARE CSS START
+/*  21. SIDEBAR CSS START
+/*  22. SECTION TITLE CSS START
+/*  23. PAGINATION CSS START
+/*  24. MENU CSS START
+/*  25. HEADER CSS START
+/*  26. FOOTER CSS START
+/*  27. COMMON CSS START
+/*  28. BUTTON CSS START
+/*  29. BREADCRUMB CSS START
+/*  30. ANIMATION CSS START
+/*  31. ACCORDION CSS START
+/*  32. BREAKPOIENT START
+/*  33. COLORS CSS START
+/*  34. MIXINS START
+/*  35. ROOT CSS  START
+/*  36. SPACING CSS  START
+/*  37. TYPOGRAPHY CSS START
+/*  38. VARIABLE START
+/*
+/*----------------------------------------*/
 
 
 
 /*----------------------------------------*/
 /*  01. THEME DEFAULT CSS START
 /*----------------------------------------*/
+
 
 @import url($font-url);
 @import url($font-url2);
@@ -179,3 +214,7 @@ p {
 		line-height: var(--st-lh-p2);
 	}
 }
+
+/*----------------------------------------*/
+/*  01. THEME DEFAULT CSS END
+/*----------------------------------------*/

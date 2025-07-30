@@ -1,3 +1,8 @@
+/*----------------------------------------*/
+/*  22. SECTION TITLE CSS START
+/*----------------------------------------*/
+
+
 .section-title {
     .subtitle {
         span {
@@ -17,7 +22,8 @@
         padding-bottom: 4px;
     }
     .main-title{
-        h2{
+        h2,
+        h1{
             margin-bottom: 0;
              @media #{$xss} {
                  font-size: 26px;
@@ -34,6 +40,7 @@
             }
         }
         h1{
+            font-size: var(--st-fz-h2);
             margin-bottom: 0;
              @media #{$xss} {
                  font-size: 28px;
@@ -45,3 +52,6 @@
 }
 
 
+/*----------------------------------------*/
+/*  22. SECTION TITLE CSS END
+/*----------------------------------------*/
